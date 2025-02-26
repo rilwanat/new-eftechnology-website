@@ -204,8 +204,9 @@ export default function EFEnergyPage({
                                               
                                               
                                               >
-          <div className='flex mt-12 mb-2'>
+          <div className='flex flex-col justify-center mt-12 mb-2'>
             <p className=' mb-2' style={{ color: '', fontWeight: '600', fontSize: '24px' }}>Send us a message</p>
+            <div className='bg-theme mb-2' style={{ width: '80px', height: '4px' }}></div>
           </div>
 
           <p className=' mb-2' style={{fontSize: '16px', color: '#777777'  }}>Fill the form below to contact us and we will get back to you as soon as possible.</p>

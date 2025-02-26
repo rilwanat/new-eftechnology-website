@@ -26,6 +26,7 @@ function ParallaxDiv({ imageUrl, title, subtitle  }) {
 
       <div className="absolute inset-0  flex flex-col justify-center items-center text-gray-200 text-center p-4">
         <h2 className="text-3xl font-bold mb-2 z-1000">{title}</h2>
+        <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
         <p className="text-lg z-1000">{subtitle}</p>
         {/* <div 
               // onClick={() => { handleSubscribeToNewsletter() }}

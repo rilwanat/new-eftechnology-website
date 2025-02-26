@@ -24,6 +24,7 @@ function WhyEF({ }) {
 
           <div className='flex flex-col w-full md:w-1/2 justify-start  mx-2 p-4 min-h-[420px]'>
             <div className="mb-4" style={{ fontWeight: '600', fontSize: '16px' }}>Why E.F Technology</div>
+            <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
             <div className=" "  style={{fontSize: '16px', color: '#777777'  }}>
             The quality of our solutions cannot be compromised. We take pride in our project delivery methodology because quality assurance is our destination.
             </div>

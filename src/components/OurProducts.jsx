@@ -31,9 +31,11 @@ function OurProducts({ }) {
                       backgroundPosition: 'center',
                     }}
         >
-          <div className='flex justify-center mt-12 mb-2'>
+          <div className='flex flex-col items-center justify-center mt-12 mb-2'>
             <p className=' mb-2' style={{ color: '', fontWeight: '600', fontSize: '24px' }}>Our Products</p>
+            <div className='bg-theme mb-2' style={{ width: '80px', height: '4px' }}></div>
           </div>
+          
 
 
 
@@ -45,6 +47,7 @@ function OurProducts({ }) {
           <div className='flex flex-col w-full md:w-1/2 justify-center items-center rounded-md shadow-md m-2 p-8 bg-white min-h-[200px]'>
           <LocationSearchingIcon className="mb-4" style={{ width: '40px', height: '40px', color: '#CBD67A' }}/>
             <div className="mb-2" style={{ fontWeight: '600', fontSize: '16px' }}>Tracker System and Devices</div>
+            <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
             <div className="px-8 text-center" style={{ fontSize: '16px', color: '#777777'   }}>
               Our trackers are of top notch quality, designed to give you the best security in your homes, automobile, and in public.
             </div>
@@ -53,6 +56,7 @@ function OurProducts({ }) {
           <div className='flex flex-col w-full md:w-1/2 justify-center items-center rounded-md shadow-md m-2 p-8 bg-white min-h-[200px]'>
           <CampaignIcon className="mb-4" style={{ width: '40px', height: '40px', color: '#CBD67A' }}/>
             <div className="mb-2" style={{ fontWeight: '600', fontSize: '16px' }}>Alert Services</div>
+            <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
             <div className="px-8 text-center" style={{ fontSize: '16px', color: '#777777'   }}>
               Providing Emergency Alert service for a nation, state or local government using the state of the art technology.
             </div>
@@ -66,6 +70,7 @@ function OurProducts({ }) {
           <div className='flex flex-col w-full md:w-1/2 justify-center items-center rounded-md shadow-md m-2 p-8 bg-white min-h-[200px]'>
           <SpeakerPhoneIcon className="mb-4" style={{ width: '40px', height: '40px', color: '#CBD67A' }}/>
             <div className="mb-2" style={{ fontWeight: '600', fontSize: '16px' }}>Communication Gadgets</div>
+            <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
             <div className="px-8 text-center" style={{ fontSize: '16px', color: '#777777'   }}>
               We specialize in the customization of Mobile phones, global walkie-talkie and trackers
             </div>
@@ -74,6 +79,7 @@ function OurProducts({ }) {
           <div className='flex flex-col w-full md:w-1/2 justify-center items-center rounded-md shadow-md m-2 p-8 bg-white min-h-[200px]'>
           <ShoppingCartIcon className="mb-4" style={{ width: '40px', height: '40px', color: '#CBD67A' }}/>
             <div className="mb-2" style={{ fontWeight: '600', fontSize: '16px' }}>E-Commerce</div>
+            <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
             <div className="px-8 text-center" style={{ fontSize: '16px', color: '#777777'   }}>
               Providing exquisite virtual shopping experiences, to customers and business directories in Africa.
             </div>
@@ -87,6 +93,7 @@ function OurProducts({ }) {
           <div className='flex flex-col w-full md:w-1/2 justify-center items-center rounded-md shadow-md m-2 p-8 bg-white min-h-[200px]'>
           <NetworkWifiIcon className="mb-4" style={{ width: '40px', height: '40px', color: '#CBD67A' }}/>
             <div className="mb-2" style={{ fontWeight: '600', fontSize: '16px' }}>EFBroadband</div>
+            <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
             <div className="px-8 text-center" style={{ fontSize: '16px', color: '#777777'   }}>
               Providing high-speed internet connectivity services for homes and offices (both outdoor and indoor).
             </div>
@@ -95,6 +102,7 @@ function OurProducts({ }) {
           <div className='flex flex-col w-full md:w-1/2 justify-center items-center rounded-md shadow-md m-2 p-8 bg-white min-h-[200px]'>
           <SecurityIcon className="mb-4" style={{ width: '40px', height: '40px', color: '#CBD67A' }}/>
             <div className="mb-2" style={{ fontWeight: '600', fontSize: '16px' }}>Security Products/Services</div>
+            <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
             <div className="px-8 text-center" style={{ fontSize: '16px', color: '#777777'  }}>
               We provide products and services to a nation state security forces for civil defence and protection
             </div>

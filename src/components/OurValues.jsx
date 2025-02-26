@@ -31,10 +31,10 @@ function OurValues({ }) {
                                   }}
                                   
         >
-          <div className='flex justify-center mt-12 mb-2'>
+          <div className='flex flex-col items-center justify-center mt-12 mb-2'>
             <p className=' mb-2' style={{ color: '', fontWeight: '600', fontSize: '24px' }}>Our Values</p>
+            <div className='bg-theme mb-2' style={{ width: '80px', height: '4px' }}></div>
           </div>
-
 
 
 
@@ -48,6 +48,7 @@ function OurValues({ }) {
             
             <div className="px-8 text-left py-4">
             <div className="mb-4" style={{ fontWeight: '600', fontSize: '16px' }}>Our Goal</div>
+            <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
             <div  style={{fontSize: '16px', color: '#777777'  }}>
             Our goal is to ensure that our clients achieve 100% satisfaction in the services we rendered by deploying our vast technical skills and knowledge.
             </div>
@@ -61,6 +62,7 @@ function OurValues({ }) {
             {/* <CampaignIcon className="mb-2" style={{ width: '40px', height: '40px', color: '#CBD67A' }}/> */}
             <div className="px-8 text-left py-4">
             <div className="mb-4" style={{ fontWeight: '600', fontSize: '16px' }}>Standard</div>
+            <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
             <div  style={{fontSize: '16px', color: '#777777'  }}>
             We adhere to the highest ethical standards and operate in a manner that is socially responsible and acceptable“we care how results are achieved”.
             </div>
@@ -74,8 +76,9 @@ function OurValues({ }) {
             {/* <CampaignIcon className="mb-2" style={{ width: '40px', height: '40px', color: '#CBD67A' }}/> */}
             <div className="px-8 text-left py-4">
             <div className="mb-4" style={{ fontWeight: '600', fontSize: '16px' }}>Support</div>
+            <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
             <div  style={{fontSize: '16px', color: '#777777'  }}>
-            We adhere to the highest ethical standards and operate in a manner that is socially responsible and acceptable“we care how results are achieved”.
+            We uphold the highest ethical standards, ensuring socially responsible operations—because "how results are achieved matters".
             </div>
             
             </div>
@@ -87,8 +90,9 @@ function OurValues({ }) {
             {/* <CampaignIcon className="mb-2" style={{ width: '40px', height: '40px', color: '#CBD67A' }}/> */}
             <div className="px-8 text-left py-4">
             <div className="mb-4" style={{ fontWeight: '600', fontSize: '16px' }}>Quality</div>
+            <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
             <div  style={{fontSize: '16px', color: '#777777'  }}>
-            The quality of our solutions cannot be compromised. We take pride in our project delivery methodology because quality assurance is our destination.
+            The quality of our solutions cannot be compromised. We take pride in our project delivery approaches because quality assurance is our destination.
             </div>
             
             </div>

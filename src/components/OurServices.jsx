@@ -31,8 +31,9 @@ function OurServices({ }) {
                 }}
                 
                 >
-          <div className='flex justify-center mt-12 mb-2'>
+          <div className='flex flex-col items-center justify-center mt-12 mb-2'>
             <p className=' mb-2' style={{ color: '', fontWeight: '600', fontSize: '24px' }}>Our Products</p>
+            <div className='bg-theme mb-2' style={{ width: '80px', height: '4px' }}></div>
           </div>
 
 

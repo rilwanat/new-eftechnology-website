@@ -96,6 +96,7 @@ export default function OurTeamPage({
                         />
           <div className="mb-1" style={{ fontWeight: '600', fontSize: '16px' }}>Gideon Egbuchulam</div>
           <span className="mb-3" style={{ color: '#cbd67a' }} >{'Chairman/Chief Executive Officer'.toUpperCase()}</span>
+          <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
             
             <div className="px-8 text-center mb-4"  style={{fontSize: '16px', color: '#777777'  }}>
             Mr. Egbuchulam has developed solutions to many of Nigeria’s infrastructure needs.
@@ -112,6 +113,8 @@ export default function OurTeamPage({
                         />
             <div className="mb-1" style={{ fontWeight: '600', fontSize: '16px' }}>John Nix</div>
             <span  className="mb-3" style={{ color: '#cbd67a' }} >{'Chief Financial Officer (CFO)'.toUpperCase()}</span>
+            <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
+
             <div className="px-8 text-center mb-4"  style={{fontSize: '16px', color: '#777777'  }}>
             Mr. Nix is the Chief Financial Officer (CFO) of E.F. Network Ltd.
             </div>
@@ -127,6 +130,8 @@ export default function OurTeamPage({
                         />
             <div className="mb-1" style={{ fontWeight: '600', fontSize: '16px' }}>John Hardy</div>
             <span className="mb-3"  style={{ color: '#cbd67a' }} >{'Chief Operating Officer (COO)'.toUpperCase()}</span>
+            <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
+
             <div className="px-8 text-center mb-4"  style={{fontSize: '16px', color: '#777777'  }}>
             Business leader with unique blend of engineering, sales, operations and..
             </div>
@@ -146,6 +151,7 @@ export default function OurTeamPage({
                         />
           <div className="mb-1" style={{ fontWeight: '600', fontSize: '16px' }}>.</div>
           <span className="mb-3"  style={{ color: '#cbd67a' }} >.</span>
+          <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
             
             <div className="px-8 text-center mb-4"  style={{fontSize: '16px', color: '#777777'  }}>
             We use technology to improve the normal conventional systems. 
@@ -162,6 +168,8 @@ export default function OurTeamPage({
                         />
             <div className="mb-1" style={{ fontWeight: '600', fontSize: '16px' }}>Varadarajan Narayanan</div>
             <span className="mb-3"  style={{ color: '#cbd67a' }} >{'Chief Information Officer (CIO)'.toUpperCase()}</span>
+            <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
+
             <div className="px-8 text-center mb-4"  style={{fontSize: '16px', color: '#777777'  }}>
             Electrical Engineer with 20+ in Industrial Electronics, Instrumentation and control..
             </div>
@@ -177,6 +185,8 @@ export default function OurTeamPage({
                         />
             <div className="mb-1" style={{ fontWeight: '600', fontSize: '16px' }}>Tom Manliclic</div>
             <span className="mb-3"  style={{ color: '#cbd67a' }} >{'Chief Technology Officer (CTO)'.toUpperCase()}</span>
+            <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
+
             <div className="px-8 text-center mb-4"  style={{fontSize: '16px', color: '#777777'  }}>
             Technically-savvy professional with a career reflecting strong leadership.
             </div>
