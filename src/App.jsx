@@ -18,6 +18,15 @@ import EFEnergyPage from './components/EFEnergyPage.jsx';
 
 import ContactPage from './components/ContactPage.jsx';
 
+import ProductPageAlert from './components/ProductPageAlert.jsx';
+import ProductPageCloud from './components/ProductPageCloud.jsx';
+import ProductPageCommunication from './components/ProductPageCommunication.jsx';
+import ProductPageECommerce from './components/ProductPageECommerce.jsx';
+import ProductPageEFBroadband from './components/ProductPageEFBroadband.jsx';
+import ProductPageEFPhone from './components/ProductPageEFPhone.jsx';
+import ProductPageSecurity from './components/ProductPageSecurity.jsx';
+import ProductPageTracker from './components/ProductPageTracker.jsx';
+
  
      
 
@@ -63,6 +72,15 @@ function App() {
             <Route path='/ef-energy' element={<EFEnergyPage isMobile={isMobile} isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} closeMenu={closeMenu} />}/>
 
             <Route path='/contact' element={<ContactPage isMobile={isMobile} isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} closeMenu={closeMenu} />}/>
+
+            <Route path='/alert-services' element={<ProductPageAlert isMobile={isMobile} isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} closeMenu={closeMenu} />}/>
+            <Route path='/cloud-services' element={<ProductPageCloud isMobile={isMobile} isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} closeMenu={closeMenu} />}/>
+            <Route path='/communication-gadgets' element={<ProductPageCommunication isMobile={isMobile} isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} closeMenu={closeMenu} />}/>
+            <Route path='/e-commerce' element={<ProductPageECommerce isMobile={isMobile} isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} closeMenu={closeMenu} />}/>
+            <Route path='/ef-broadband' element={<ProductPageEFBroadband isMobile={isMobile} isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} closeMenu={closeMenu} />}/>
+            <Route path='/ef-phone' element={<ProductPageEFPhone isMobile={isMobile} isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} closeMenu={closeMenu} />}/>
+            <Route path='/security-products' element={<ProductPageSecurity isMobile={isMobile} isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} closeMenu={closeMenu} />}/>
+            <Route path='/tracker-systems' element={<ProductPageTracker isMobile={isMobile} isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} closeMenu={closeMenu} />}/>
 
             </Routes>
         </div>
