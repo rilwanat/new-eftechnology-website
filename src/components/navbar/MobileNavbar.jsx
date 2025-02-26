@@ -75,9 +75,9 @@ export default function MobileNavbar({
           onClick={toggleMenu}
         >
           <div style={{ width: '20px', height: '24px' }}>
-            <div className='bg-theme' style={{ width: '20px', height: '2px', marginTop: '4px', marginBottom: '6px' }}></div>
-            <div className='bg-theme' style={{ width: '20px', height: '2px', marginBottom: '6px' }}></div>
-            <div className='bg-theme' style={{ width: '20px', height: '2px', }}></div>
+            <div className='bg-white' style={{ width: '20px', height: '2px', marginTop: '4px', marginBottom: '6px' }}></div>
+            <div className='bg-white' style={{ width: '20px', height: '2px', marginBottom: '6px' }}></div>
+            <div className='bg-white' style={{ width: '20px', height: '2px', }}></div>
           </div>
         </IconButton>
 
