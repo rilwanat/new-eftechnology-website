@@ -18,6 +18,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 
 import gideon from '../assets/images/team/team-gideon.png';
+import gideon2 from '../assets/images/team/team-gideon2.png';
 import team from '../assets/images/team/team.png';
 
 import background from '../assets/images/background.png';
@@ -138,7 +139,7 @@ export default function OurTeamPage({
           <div className='flex flex-col w-full md:w-1/3 justify-center items-center rounded-md shadow-md m-2 p-4 bg-white min-h-[200px]'>
           <img
                           className="block h-60 w-60 mb-2 mt-4"
-                          src={team}
+                          src={gideon2}
                           alt="Logo"
                           onClick={() => { navigate('/'); }}
                           style={{ cursor: 'pointer' }}
