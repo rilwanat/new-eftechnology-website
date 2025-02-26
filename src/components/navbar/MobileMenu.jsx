@@ -111,6 +111,7 @@ function MobileMenu({
             alt="Logo"
             onClick={() => {
               navigate('/');
+            toggleMenu();
           }}
             style={{ cursor: 'pointer' }}
           />
@@ -123,7 +124,7 @@ function MobileMenu({
         {/* <hr /> */}
         {/* Apply variants to each menu item */}
         <div className='pb-2'>
-        <motion.span
+        {/* <motion.span
           variants={menuItemVariants}
           initial="hidden"
           animate={isMenuOpen ? "visible" : "hidden"}
@@ -134,7 +135,7 @@ function MobileMenu({
         }}
         >
           Home
-        </motion.span>
+        </motion.span> */}
 
         <motion.span
           variants={menuItemVariants}
@@ -218,7 +219,7 @@ function MobileMenu({
           variants={menuItemVariants}
           initial="hidden"
           animate={isMenuOpen ? "visible" : "hidden"}
-          className="text-sm  cursor-pointer block my-4 mx-6"
+          className="text-sm  cursor-pointer block my-4 mx-6 "
           onClick={() => {
             navigate('/ef-gold');
             toggleMenu();
