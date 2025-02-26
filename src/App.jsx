@@ -32,10 +32,10 @@ import ProductPageTracker from './components/ProductPageTracker.jsx';
 
 function App() {
 
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 600);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1000);
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 600);
+      setIsMobile(window.innerWidth <= 1000);
     };
     window.addEventListener('resize', handleResize);
     return () => {
