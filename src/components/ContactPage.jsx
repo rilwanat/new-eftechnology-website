@@ -102,10 +102,12 @@ export default function ContactPage({
 
             <div className='text-lg mt-4' style={{ fontWeight: '600', cursor: 'pointer' }}>Office Hours</div>
             <hr className='my-2' style={{ color: '#CBD67A'  }}/>
-            <div className='flex flex-col mr-4'>
+            <div className='flex mr-4'>
               <div className='mr-1'><AccessTimeIcon style={{ color: '#CBD67A'  }} /></div>
+              <div className='flex flex-col '>
               <div className='' style={{fontSize: '16px', color: '#777777'  }}>9:00 AM - 5:00 PM</div>
               <div className='' style={{fontSize: '16px', color: '#777777'  }}>Monday - Friday</div>
+              </div>
           </div>
 
           <div className='text-lg mt-4' style={{ fontWeight: '600', cursor: 'pointer' }}>Phone</div>
@@ -128,7 +130,7 @@ export default function ContactPage({
         </div>
         <div className='flex w-full  h-full md:w-2/3'>
           <div className='flex flex-col p-4'>
-            <div className='text-lg mb-2' style={{  }}>Send us a message</div>
+            <div className='text-lg mb-2 font-bold' style={{  }}>Send us a message</div>
             <div className='mb-10' style={{fontSize: '16px', color: '#777777'  }}>Fill the form below to contact us and we will get back to you as soon as possible.</div>
 
 <input
