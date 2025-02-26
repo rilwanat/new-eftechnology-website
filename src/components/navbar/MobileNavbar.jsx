@@ -35,7 +35,7 @@ export default function MobileNavbar({
             src={logo} 
             alt="Logo"
             // onClick={toggleMenu}
-            // onClick={() => {navigate('/');}}
+            onClick={() => {navigate('/');}}
             style={{ cursor: 'pointer' }}
           />
 
