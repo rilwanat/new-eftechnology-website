@@ -100,7 +100,7 @@ function Footer({
         </div>
       </div>
 
-      <div className='px-4 lg:px-16 xl:px-24 2xl:px-80 flex flex-col'   style={{ color: '#eeeeee', backgroundColor: '#1D2024' }}>
+      <div className='px-4 lg:px-16 xl:px-24 2xl:px-80 flex flex-col pt-4'   style={{ color: '#eeeeee', backgroundColor: '#1D2024' }}>
         {/* <div className='flex flex-col'>
           <p className="text-sm  my-2">#</p>
           <p className="text-sm  my-2">#..</p>

@@ -49,7 +49,7 @@ function OurProducts({ }) {
             <div className="mb-2" style={{ fontWeight: '600', fontSize: '16px' }}>Tracker System and Devices</div>
             <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
             <div className="px-8 text-center" style={{ fontSize: '16px', color: '#777777'   }}>
-              Our trackers are of top notch quality, designed to give you the best security in your homes, automobile, and in public.
+              Our top notch trackers are of designed to give you the best security in your home, automobile, and in public.
             </div>
             <div className="mt-4 cursor-pointer" style={{ fontWeight: '600', color: '#CBD67A', fontSize: '16px' }}>Read More</div>
           </div>
@@ -72,7 +72,7 @@ function OurProducts({ }) {
             <div className="mb-2" style={{ fontWeight: '600', fontSize: '16px' }}>Communication Gadgets</div>
             <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
             <div className="px-8 text-center" style={{ fontSize: '16px', color: '#777777'   }}>
-              We specialize in the customization of Mobile phones, global walkie-talkie and trackers
+              We specialize in the customization of Mobile phones, global walkie-talkie and trackers.
             </div>
             <div className="mt-4 cursor-pointer" style={{ fontWeight: '600', color: '#CBD67A', fontSize: '16px' }}>Read More</div>
           </div>
@@ -104,7 +104,7 @@ function OurProducts({ }) {
             <div className="mb-2" style={{ fontWeight: '600', fontSize: '16px' }}>Security Products/Services</div>
             <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
             <div className="px-8 text-center" style={{ fontSize: '16px', color: '#777777'  }}>
-              We provide products and services to a nation state security forces for civil defence and protection
+              We provide products and services to a nation state security forces for civil defence and protection.
             </div>
             <div className="mt-4 cursor-pointer" style={{ fontWeight: '600', color: '#CBD67A', fontSize: '16px' }}>Read More</div>
           </div>
