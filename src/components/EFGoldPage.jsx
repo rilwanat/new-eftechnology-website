@@ -119,7 +119,7 @@ const handleSendMessage = async () => {
   formData.append('email', email);
   formData.append('contactName', contactName);
   formData.append('remark', remark);
-  formData.append('selectedOptions', JSON.stringify(selectedOptions));
+  // formData.append('selectedOptions', JSON.stringify(selectedOptions));
   if (file) {
       formData.append('file', file);
   }
