@@ -108,46 +108,90 @@ export default function EFEnergyPage({
       return true;
   };
 
-  const handleSendMessage = () => {
-      if (!validateInputs() || !validateCheckboxes()) {
-          return;
+  
+const isValidNumber = (number) => {
+  const numberPattern = /^\d+$/;
+  return numberPattern.test(number);
+};
+
+
+const isValidateNigerianNumber = (ngPhoneNumber) => {
+  const nigerianPhonePattern = /^\+234(70|80|81|90|91)\d{8}$/;
+  return nigerianPhonePattern.test(ngPhoneNumber);
+};
+
+const isValidEmail = (email) => {
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  return emailRegex.test(email);
+};
+
+
+
+const handleSendMessage = async () => {
+  if (!validateInputs() 
+    || !validateCheckboxes()
+  ) {
+      return;
+  }
+
+
+  if (!isValidNumber(number)) {
+    // openNotificationModal(false, currentPageName + " Form Error", 'Invalid email address');
+    alert("Please, enter a valid phone number, numbers only.");
+    return;
+}
+
+  if (!isValidEmail(email)) {
+    // openNotificationModal(false, currentPageName + " Form Error", 'Invalid email address');
+    alert("Please, enter a valid email.");
+    return;
+}
+
+
+
+  const selectedOptions = checkboxes
+      .filter((checkbox) => checkbox.checked)
+      .map((checkbox) => checkbox.label);
+
+  const formData = new FormData();
+  formData.append('companyName', companyName);
+  formData.append('address', address);
+  formData.append('phoneNumber', phoneNumber);
+  formData.append('email', email);
+  formData.append('contactName', contactName);
+  formData.append('remark', remark);
+  formData.append('selectedOptions', JSON.stringify(selectedOptions));
+  if (file) {
+      formData.append('file', file);
+  }
+
+  try {
+      const response = await fetch('https://eftechnology.net/new-eftechnology-php/send-mail.php', {
+          method: 'POST',
+          body: formData
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+          alert("Message was sent successfully");
+          // Reset form
+          setCompanyName('');
+          setAddress('');
+          setPhoneNumber('');
+          setEmail('');
+          setContactName('');
+          setRemark('');
+          setFile(null);
+          setCheckboxes(checkboxes.map(checkbox => ({ ...checkbox, checked: false })));
+      } else {
+          alert("Failed to send message");
       }
-
-      // Proceed with sending the message (e.g., API call)
-      const selectedOptions = checkboxes
-          .filter((checkbox) => checkbox.checked)
-          .map((checkbox) => checkbox.label);
-
-      const formData = new FormData();
-      formData.append('companyName', companyName);
-      formData.append('address', address);
-      formData.append('phoneNumber', phoneNumber);
-      formData.append('email', email);
-      formData.append('contactName', contactName);
-      formData.append('remark', remark);
-      formData.append('selectedOptions', JSON.stringify(selectedOptions));
-      if (file) {
-          formData.append('file', file);
-      }
-
-      // Example: Logging the data
-      console.log('Form Data:', formData);
-      console.log('Selected Options:', selectedOptions);
-      console.log('File:', file);
-
-      // You would replace the console.log with your actual API call or email sending logic.
-
-      alert("Message was sent");
-      // Reset form
-      setCompanyName('');
-      setAddress('');
-      setPhoneNumber('');
-      setEmail('');
-      setContactName('');
-      setRemark('');
-      setFile(null);
-      setCheckboxes(checkboxes.map(checkbox => ({...checkbox, checked: false})));
-  };
+  } catch (error) {
+      console.error("Error sending message:", error);
+      alert("An error occurred while sending the message");
+  }
+};
 
 
 

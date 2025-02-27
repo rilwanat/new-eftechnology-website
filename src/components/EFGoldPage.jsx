@@ -101,6 +101,23 @@ const validateCheckboxes = () => {
     return true;
 };
 
+const isValidNumber = (number) => {
+  const numberPattern = /^\d+$/;
+  return numberPattern.test(number);
+};
+
+
+const isValidateNigerianNumber = (ngPhoneNumber) => {
+  const nigerianPhonePattern = /^\+234(70|80|81|90|91)\d{8}$/;
+  return nigerianPhonePattern.test(ngPhoneNumber);
+};
+
+const isValidEmail = (email) => {
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  return emailRegex.test(email);
+};
+
+
 const handleSendMessage = async () => {
   if (!validateInputs() 
     // || !validateCheckboxes()
@@ -108,9 +125,24 @@ const handleSendMessage = async () => {
       return;
   }
 
-  const selectedOptions = checkboxes
-      .filter((checkbox) => checkbox.checked)
-      .map((checkbox) => checkbox.label);
+
+  if (!isValidNumber(number)) {
+    // openNotificationModal(false, currentPageName + " Form Error", 'Invalid email address');
+    alert("Please, enter a valid phone number, numbers only.");
+    return;
+}
+
+  if (!isValidEmail(email)) {
+    // openNotificationModal(false, currentPageName + " Form Error", 'Invalid email address');
+    alert("Please, enter a valid email.");
+    return;
+}
+
+
+
+  // const selectedOptions = checkboxes
+  //     .filter((checkbox) => checkbox.checked)
+  //     .map((checkbox) => checkbox.label);
 
   const formData = new FormData();
   formData.append('companyName', companyName);
