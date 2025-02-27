@@ -168,7 +168,7 @@ export default function ProductsPage({
             <div className="mb-2" style={{ fontWeight: '600', fontSize: '16px' }}>Cloud Services</div>
             <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
             <div className="px-8 text-center" style={{ fontSize: '16px', color: '#777777'   }}>
-              Providing unlimited cloud storage services on what matters to you.
+              Providing unlimited cloud storage services on data most important to you.
             </div>
             <a href='/e-commerce' className="mt-4 cursor-pointer text-darkTheme hover:text-theme" style={{ fontWeight: '600', fontSize: '16px' }}>Read More</a>
           </div>
@@ -177,7 +177,7 @@ export default function ProductsPage({
             <div className="mb-2" style={{ fontWeight: '600', fontSize: '16px' }}>EFPhonetaxi</div>
             <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
             <div className="px-8 text-center" style={{ fontSize: '16px', color: '#777777'   }}>
-            An outstanding anti-theft phone system that protects user data and devices, prevents the sale of stolen phones, and enables the possible arrest of offenders.
+            An outstanding anti-theft phone system that protects user data and prevents the sale of stolen phones, and enables the possible arrest of offenders.
             </div>
             <a href='/e-commerce' className="mt-4 cursor-pointer text-darkTheme hover:text-theme" style={{ fontWeight: '600', fontSize: '16px' }}>Read More</a>
           </div>
