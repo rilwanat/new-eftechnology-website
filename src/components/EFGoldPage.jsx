@@ -101,46 +101,55 @@ const validateCheckboxes = () => {
     return true;
 };
 
-const handleSendMessage = () => {
-    if (!validateInputs() || !validateCheckboxes()) {
-        return;
-    }
+const handleSendMessage = async () => {
+  if (!validateInputs() || !validateCheckboxes()) {
+      return;
+  }
 
-    // Proceed with sending the message (e.g., API call)
-    const selectedOptions = checkboxes
-        .filter((checkbox) => checkbox.checked)
-        .map((checkbox) => checkbox.label);
+  const selectedOptions = checkboxes
+      .filter((checkbox) => checkbox.checked)
+      .map((checkbox) => checkbox.label);
 
-    const formData = new FormData();
-    formData.append('companyName', companyName);
-    formData.append('address', address);
-    formData.append('phoneNumber', phoneNumber);
-    formData.append('email', email);
-    formData.append('contactName', contactName);
-    formData.append('remark', remark);
-    formData.append('selectedOptions', JSON.stringify(selectedOptions));
-    if (file) {
-        formData.append('file', file);
-    }
+  const formData = new FormData();
+  formData.append('companyName', companyName);
+  formData.append('address', address);
+  formData.append('phoneNumber', phoneNumber);
+  formData.append('email', email);
+  formData.append('contactName', contactName);
+  formData.append('remark', remark);
+  formData.append('selectedOptions', JSON.stringify(selectedOptions));
+  if (file) {
+      formData.append('file', file);
+  }
 
-    // Example: Logging the data
-    console.log('Form Data:', formData);
-    console.log('Selected Options:', selectedOptions);
-    console.log('File:', file);
+  try {
+      const response = await fetch('https://eftechnology.net/new-eftechnology-php/send-mail.php', {
+          method: 'POST',
+          body: formData
+      });
 
-    // You would replace the console.log with your actual API call or email sending logic.
+      const result = await response.json();
 
-    alert("Message was sent");
-    // Reset form
-    setCompanyName('');
-    setAddress('');
-    setPhoneNumber('');
-    setEmail('');
-    setContactName('');
-    setRemark('');
-    setFile(null);
-    setCheckboxes(checkboxes.map(checkbox => ({...checkbox, checked: false})));
+      if (result.success) {
+          alert("Message was sent successfully");
+          // Reset form
+          setCompanyName('');
+          setAddress('');
+          setPhoneNumber('');
+          setEmail('');
+          setContactName('');
+          setRemark('');
+          setFile(null);
+          setCheckboxes(checkboxes.map(checkbox => ({ ...checkbox, checked: false })));
+      } else {
+          alert("Failed to send message");
+      }
+  } catch (error) {
+      console.error("Error sending message:", error);
+      alert("An error occurred while sending the message");
+  }
 };
+
 
 
 
