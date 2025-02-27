@@ -107,13 +107,15 @@ export default function MenuBar({
         //   }}
         > 
                 <div className="flex w-full justify-between items-center">
+                  <a href='/'>
                   <img
                     className="block h-20 w-auto max-w-none"
                     src={logo}
                     alt="Logo"
-                    onClick={() => { navigate('/'); }}
+                    onClick={() => {  }}
                     style={{ cursor: 'pointer' }}
                   />
+                  </a>
         
                   <div className='ml-0 '>
                   <div className="flex w-full items-center z-50" style={{ height: '40px' }}>

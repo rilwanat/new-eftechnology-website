@@ -41,7 +41,9 @@ export default function HeaderHead({
         <div className='flex w-1/2'>
           <div className='flex mr-8 items-center'>
             {/* <div className='mr-2'><PlaceIcon style={{ width: '18px', height: '20px', color: '#CBD67A'  }} /></div> */}
-            <div className='whitespace-nowrap' style={{ fontWeight: '600', cursor: 'pointer', color: '#CBD67A' }}>E.F NETWORK ORGANISATION</div>
+            <a className='whitespace-nowrap' style={{ fontWeight: '600', cursor: 'pointer', color: '#CBD67A' }} 
+            href='/'
+            >E.F NETWORK ORGANISATION</a>
           </div>
           <div className='flex mr-8 cursor-pointer'
             onClick={() => {}}
