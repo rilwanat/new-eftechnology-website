@@ -8,40 +8,17 @@ import HeaderParallax from './HeaderParallax';
 import conference from '../assets/images/conference-wide.jpg';
 import gold from '../assets/images/gold.jpg';
 
-import HeroGold from './HeroGold';
-
-import PlaceIcon from '@mui/icons-material/Place';
-import EmailIcon from '@mui/icons-material/Email';
-import CallIcon from '@mui/icons-material/Call';
-
-import XIcon from '@mui/icons-material/X';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import InstagramIcon from '@mui/icons-material/Instagram';
-
 import logo from '../assets/images/logo.png';
-import appStore from '../assets/svg/app-store-badge.svg';
-import playStore from '../assets/svg/play-store-badge.svg';
-
-import SearchIcon from '@mui/icons-material/Search';
-import PersonIcon from '@mui/icons-material/Person';
-
-import stars from '../assets/images/stars.png';
-
-import Hero from './Hero';
-
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-
-import { motion, AnimatePresence } from 'framer-motion';
-
-import OurProducts from './OurProducts';
-import ChairmansMessage from './ChairmansMessage';
-import AboutUs from './AboutUs';
-import WorkProcess from './WorkProcess';
-
 
 
 import background from '../assets/images/background.png';
+
+
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
+
 
 
 
@@ -50,6 +27,14 @@ export default function EFGoldPage({
  }) {
 
 
+  const goldImages = [
+    gold,
+    gold,
+    gold,
+    gold,
+  ];
+  // const [currentSlides, setCurrentSlides] = useState(Array(goldImages.length).fill(0));
+  // const [zoomedItemId, setZoomedItemId] = useState(null);
 
   const [checkboxes, setCheckboxes] = useState([
     { id: 1, label: 'JET-A1', checked: false },
@@ -70,11 +55,6 @@ export default function EFGoldPage({
     );
   };
 
-  const imageUrls = [
-    conference,
-    conference,
-    conference
-  ];
 
   
 
@@ -155,6 +135,48 @@ const handleSendMessage = () => {
     setCheckboxes(checkboxes.map(checkbox => ({...checkbox, checked: false})));
 };
 
+
+
+
+
+
+const settings = {
+  dots: false,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        initialSlide: 2,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+};
+
+
   return (
 
 
@@ -209,8 +231,36 @@ const handleSendMessage = () => {
                                                             backgroundPosition: 'center',
                                                           }}
                                                           >
+
+
+
+<div className='flex w-full h-full items-center justify-center mt-4'
+>
+      <div  className='w-full' style={{  }}>
+        <Slider {...settings}>
+          {goldImages.map((image, index) => (
+            <div key={index} 
+            className='flex w-full items-center justify-center' >
+              <img
+                src={image}
+                alt={`Slide ${index + 1}`}
+                style={{ width: '100%', height: 'auto', objectFit: 'contain' }}
+              />
+            </div>
+          ))}
+        </Slider>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
  
-          <div className='flex flex-col justify-center mt-12 mb-2'>
+          <div className='flex flex-col justify-center mt-8 mb-2'>
             <p className=' mb-2' style={{ color: '', fontWeight: '600', fontSize: '24px' }}>Send us a message</p>
             <div className='bg-theme mb-2' style={{ width: '80px', height: '4px' }}></div>
           </div>
