@@ -46,12 +46,12 @@ function OurProducts({ }) {
         <div className=' flex flex-col md:flex-row items-center justify-between mt-4 '>
           <div className='flex flex-col w-full md:w-1/2 justify-center items-center rounded-md shadow-md m-2 p-8 bg-white min-h-[200px]'>
           <LocationSearchingIcon className="mb-4" style={{ width: '40px', height: '40px', color: '#CBD67A' }}/>
-            <div className="mb-2" style={{ fontWeight: '600', fontSize: '16px' }}>Tracker System and Devices</div>
+            <div className="mb-2" style={{ fontWeight: '600', fontSize: '16px' }}>Tracker Systems and Devices</div>
             <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
             <div className="px-8 text-center" style={{ fontSize: '16px', color: '#777777'   }}>
               Our top notch trackers are of designed to give you the best security in your home, automobile, and in public.
             </div>
-            <div className="mt-4 cursor-pointer" style={{ fontWeight: '600', color: '#CBD67A', fontSize: '16px' }}>Read More</div>
+            <a href='/tracker-systems' className="mt-4 cursor-pointer text-darkTheme hover:text-theme" style={{ fontWeight: '600', fontSize: '16px' }}>Read More</a>
           </div>
           <div className='flex flex-col w-full md:w-1/2 justify-center items-center rounded-md shadow-md m-2 p-8 bg-white min-h-[200px]'>
           <CampaignIcon className="mb-4" style={{ width: '40px', height: '40px', color: '#CBD67A' }}/>
@@ -60,7 +60,7 @@ function OurProducts({ }) {
             <div className="px-8 text-center" style={{ fontSize: '16px', color: '#777777'   }}>
               Providing Emergency Alert service for a nation, state or local government using the state of the art technology.
             </div>
-            <div className="mt-4 cursor-pointer" style={{ fontWeight: '600', color: '#CBD67A', fontSize: '16px' }}>Read More</div>
+            <a href='/alert-services' className="mt-4 cursor-pointer text-darkTheme hover:text-theme" style={{ fontWeight: '600', fontSize: '16px' }}>Read More</a>
           </div>
 
         </div>
@@ -74,7 +74,7 @@ function OurProducts({ }) {
             <div className="px-8 text-center" style={{ fontSize: '16px', color: '#777777'   }}>
               We specialize in the customization of Mobile phones, global walkie-talkie and trackers.
             </div>
-            <div className="mt-4 cursor-pointer" style={{ fontWeight: '600', color: '#CBD67A', fontSize: '16px' }}>Read More</div>
+            <a href='/communication-gadgets' className="mt-4 cursor-pointer text-darkTheme hover:text-theme" style={{ fontWeight: '600', fontSize: '16px' }}>Read More</a>
           </div>
           <div className='flex flex-col w-full md:w-1/2 justify-center items-center rounded-md shadow-md m-2 p-8 bg-white min-h-[200px]'>
           <ShoppingCartIcon className="mb-4" style={{ width: '40px', height: '40px', color: '#CBD67A' }}/>
@@ -83,7 +83,7 @@ function OurProducts({ }) {
             <div className="px-8 text-center" style={{ fontSize: '16px', color: '#777777'   }}>
               Providing exquisite virtual shopping experiences, to customers and business directories in Africa.
             </div>
-            <div className="mt-4 cursor-pointer" style={{ fontWeight: '600', color: '#CBD67A', fontSize: '16px' }}>Read More</div>
+            <a href='/e-commerce' className="mt-4 cursor-pointer text-darkTheme hover:text-theme" style={{ fontWeight: '600', fontSize: '16px' }}>Read More</a>
           </div>
 
         </div>
@@ -97,7 +97,7 @@ function OurProducts({ }) {
             <div className="px-8 text-center" style={{ fontSize: '16px', color: '#777777'   }}>
               Providing high-speed internet connectivity services for homes and offices (both outdoor and indoor).
             </div>
-            <div className="mt-4 cursor-pointer" style={{ fontWeight: '600', color: '#CBD67A', fontSize: '16px' }}>Read More</div>
+            <a href='/ef-broadband' className="mt-4 cursor-pointer text-darkTheme hover:text-theme" style={{ fontWeight: '600', fontSize: '16px' }}>Read More</a>
           </div>
           <div className='flex flex-col w-full md:w-1/2 justify-center items-center rounded-md shadow-md m-2 p-8 bg-white min-h-[200px]'>
           <SecurityIcon className="mb-4" style={{ width: '40px', height: '40px', color: '#CBD67A' }}/>
@@ -106,7 +106,7 @@ function OurProducts({ }) {
             <div className="px-8 text-center" style={{ fontSize: '16px', color: '#777777'  }}>
               We provide products and services to a nation state security forces for civil defence and protection.
             </div>
-            <div className="mt-4 cursor-pointer" style={{ fontWeight: '600', color: '#CBD67A', fontSize: '16px' }}>Read More</div>
+            <a href='/security-products' className="mt-4 cursor-pointer text-darkTheme hover:text-theme" style={{ fontWeight: '600', fontSize: '16px' }}>Read More</a>
           </div>
 
         </div>

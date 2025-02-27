@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { motion } from 'framer-motion';
 
 
-import skyview from '../assets/images/skyview.jpg';
+import skyview from '../assets/images/skyview2.jpg';
 import background from '../assets/images/background.png';
 
 
