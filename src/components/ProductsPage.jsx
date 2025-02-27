@@ -46,6 +46,9 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import NetworkWifiIcon from '@mui/icons-material/NetworkWifi';
 import SecurityIcon from '@mui/icons-material/Security';
 
+import CloudUploadIcon from '@mui/icons-material/CloudUpload';
+import DeviceUnknownIcon from '@mui/icons-material/DeviceUnknown';
+
 import background from '../assets/images/background.png';
 
 
@@ -164,20 +167,20 @@ export default function ProductsPage({
             <a href='/e-commerce' className="mt-4 cursor-pointer text-darkTheme hover:text-theme" style={{ fontWeight: '600', fontSize: '16px' }}>Read More</a>
           </div>
           <div className='flex flex-col w-full md:w-1/3 justify-center items-center rounded-md shadow-md m-2 p-8 bg-white min-h-[200px]'>
-          <ShoppingCartIcon className="mb-4" style={{ width: '40px', height: '40px', color: '#CBD67A' }}/>
+          <CloudUploadIcon className="mb-4" style={{ width: '40px', height: '40px', color: '#CBD67A' }}/>
             <div className="mb-2" style={{ fontWeight: '600', fontSize: '16px' }}>Cloud Services</div>
             <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
             <div className="px-8 text-center" style={{ fontSize: '16px', color: '#777777'   }}>
-              Providing unlimited cloud storage services on data most important to you.
+              Providing unlimited cloud storage services and backup services on data most important to you.
             </div>
             <a href='/e-commerce' className="mt-4 cursor-pointer text-darkTheme hover:text-theme" style={{ fontWeight: '600', fontSize: '16px' }}>Read More</a>
           </div>
           <div className='flex flex-col w-full md:w-1/3 justify-center items-center rounded-md shadow-md m-2 p-8 bg-white min-h-[200px]'>
-          <ShoppingCartIcon className="mb-4" style={{ width: '40px', height: '40px', color: '#CBD67A' }}/>
+          <DeviceUnknownIcon className="mb-4" style={{ width: '40px', height: '40px', color: '#CBD67A' }}/>
             <div className="mb-2" style={{ fontWeight: '600', fontSize: '16px' }}>EFPhonetaxi</div>
             <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
             <div className="px-8 text-center" style={{ fontSize: '16px', color: '#777777'   }}>
-            An outstanding anti-theft phone system that protects user data and prevents the sale of stolen phones, and enables the possible arrest of offenders.
+            An anti-theft system that protects user data and prevents the sale of stolen phones, and enables arrest of offenders.
             </div>
             <a href='/e-commerce' className="mt-4 cursor-pointer text-darkTheme hover:text-theme" style={{ fontWeight: '600', fontSize: '16px' }}>Read More</a>
           </div>
