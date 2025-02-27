@@ -8,6 +8,7 @@ import Parallax from './Parallax';
 import HeaderParallax from './HeaderParallax';
 import conference from '../assets/images/conference-wide.jpg';
 import admin from '../assets/images/admin.jpg';
+import frontdesk from '../assets/images/frontdesk.jpg';
 
 import PlaceIcon from '@mui/icons-material/Place';
 import EmailIcon from '@mui/icons-material/Email';
@@ -90,7 +91,7 @@ export default function ProductsPage({
 
 
           {isMenuOpen ? <div></div> : <HeaderParallax 
-        imageUrl={admin}//"/images/your-image.jpg";
+        imageUrl={frontdesk}//"/images/your-image.jpg";
             title={"Products"}
             subtitle={""}
         />}
@@ -219,7 +220,11 @@ export default function ProductsPage({
 
 
 
-
+      {isMobile ? <div></div> :  <Parallax 
+        imageUrl={conference}//"/images/your-image.jpg";
+            title={"Bringing Your Dreams To Reality Using Modern Technology"}
+            subtitle={"Ready to begin your journey with us?"}
+        />}
 
 
           </div>
