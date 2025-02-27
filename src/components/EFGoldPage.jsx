@@ -6,7 +6,11 @@ import Footer from './navbar/Footer';
 import MenuBar from './navbar/MenuBar';
 import HeaderParallax from './HeaderParallax';
 import conference from '../assets/images/conference-wide.jpg';
-import gold from '../assets/images/gold.jpg';
+
+import gold from '../assets/images/gold/gold.jpg';
+import gold1 from '../assets/images/gold/gold1.png';
+import gold2 from '../assets/images/gold/gold2.png';
+import gold3 from '../assets/images/gold/gold3.png';
 
 import logo from '../assets/images/logo.png';
 
@@ -28,10 +32,9 @@ export default function EFGoldPage({
 
 
   const goldImages = [
-    gold,
-    gold,
-    gold,
-    gold,
+    gold1,
+    gold2,
+    gold3,
   ];
   // const [currentSlides, setCurrentSlides] = useState(Array(goldImages.length).fill(0));
   // const [zoomedItemId, setZoomedItemId] = useState(null);
@@ -240,8 +243,9 @@ const settings = {
         <Slider {...settings}>
           {goldImages.map((image, index) => (
             <div key={index} 
-            className='flex w-full items-center justify-center' >
-              <img
+            className='flex w-full items-center justify-center px-2  ' >
+              <img 
+              // className='border-2 border-theme'
                 src={image}
                 alt={`Slide ${index + 1}`}
                 style={{ width: '100%', height: 'auto', objectFit: 'contain' }}
