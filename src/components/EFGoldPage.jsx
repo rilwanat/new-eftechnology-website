@@ -11,6 +11,7 @@ import gold from '../assets/images/gold/gold.jpg';
 import gold1 from '../assets/images/gold/gold1.png';
 import gold2 from '../assets/images/gold/gold2.png';
 import gold3 from '../assets/images/gold/gold3.png';
+import gold4 from '../assets/images/gold/gold4.png';
 
 import logo from '../assets/images/logo.png';
 
@@ -35,6 +36,7 @@ export default function EFGoldPage({
     gold1,
     gold2,
     gold3,
+    gold4,
   ];
   // const [currentSlides, setCurrentSlides] = useState(Array(goldImages.length).fill(0));
   // const [zoomedItemId, setZoomedItemId] = useState(null);
@@ -236,6 +238,15 @@ const settings = {
                                                           >
 
 
+<p className='w-full mt-8'>
+We have been in the gold business for over 17 years, serving various African countries. Our gold is sold on a <strong>CIF</strong> or <strong>FOB</strong> basis, and we provide air transport to all destinations except sanctioned countries.
+
+We operate in the following listed countries: Angola, Benin Republic, Burkina Faso, Democratic Republic of the Congo (DRC), Equatorial Guinea, Ethiopia, Ghana, Guinea Conakry, Kenya, Liberia, Libya, Mali, Mauritania, Mauritius, Mozambique, Namibia, Sao Tomé, Senegal, Sierra Leone, South Africa, South Sudan, Tanzania, Togo, Uganda, Zimbabwe
+</p>
+
+
+
+
 
 <div className='flex w-full h-full items-center justify-center mt-4'
 >
@@ -262,7 +273,6 @@ const settings = {
 
 
 
-
  
           <div className='flex flex-col justify-center mt-8 mb-2'>
             <p className=' mb-2' style={{ color: '', fontWeight: '600', fontSize: '24px' }}>Send us a message</p>
@@ -270,12 +280,12 @@ const settings = {
           </div>
 
           <p className=' mb-2' style={{fontSize: '16px', color: '#777777'  }}>Fill the form below to contact us and we will get back to you as soon as possible.</p>
-          <p className=' mb-2' style={{fontSize: '16px', color: '#777777'  }}>Select product(s) of interest:</p>
+          {/* <p className=' mb-2' style={{fontSize: '16px', color: '#777777'  }}>Select product(s) of interest:</p> */}
           
-          
+{/*           
           <div>
           <div className="flex p-4 border rounded-sm">
-      {/* <h2 className="text-lg font-semibold mb-2">Select Options:</h2> */}
+      <h2 className="text-lg font-semibold mb-2">Select Options:</h2>
       <div className='flex-col md:flex-row flex'>
       {checkboxes.map((checkbox) => (
         <div key={checkbox.id} className="flex items-center mb-2 md:mb-0 mr-6">
@@ -292,16 +302,16 @@ const settings = {
       ))}
       </div>
 
-      {/* <div className = "mt-4">
+      <div className = "mt-4">
         <p>Selected Options:</p>
         <ul>
           {checkboxes.filter(checkbox => checkbox.checked).map(checkedBox => (
             <li key = {checkedBox.id}>{checkedBox.label}</li>
           ))}
         </ul>
-      </div> */}
+      </div>
     </div>
-          </div>
+          </div> */}
 
 
 
