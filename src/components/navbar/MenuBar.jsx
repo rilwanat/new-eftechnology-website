@@ -35,7 +35,7 @@ export default function MenuBar({
   const dropdownRefs = useRef([]);
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const menuItems = [
-    // { label: 'HOME', href: '/' },
+    { label: 'HOME', href: '/' },
     { label: 'COMPANY', dropdown: [
       { label: 'About Us', href: '/about-us' },
       { label: 'Our Team', href: '/our-team' },
