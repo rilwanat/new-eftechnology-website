@@ -12,6 +12,8 @@ import gold1 from '../assets/images/gold/gold1.png';
 import gold2 from '../assets/images/gold/gold2.png';
 import gold3 from '../assets/images/gold/gold3.png';
 import gold4 from '../assets/images/gold/gold4.png';
+import gold5 from '../assets/images/gold/gold5.png';
+import gold6 from '../assets/images/gold/gold6.png';
 
 import logo from '../assets/images/logo.png';
 
