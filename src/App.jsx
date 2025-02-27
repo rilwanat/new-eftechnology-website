@@ -18,6 +18,7 @@ import EFEnergyPage from './components/EFEnergyPage.jsx';
 
 import ContactPage from './components/ContactPage.jsx';
 
+import ProductsPage from './components/ProductsPage.jsx';
 import ProductPageAlert from './components/ProductPageAlert.jsx';
 import ProductPageCloud from './components/ProductPageCloud.jsx';
 import ProductPageCommunication from './components/ProductPageCommunication.jsx';
@@ -73,6 +74,7 @@ function App() {
 
             <Route path='/contact' element={<ContactPage isMobile={isMobile} isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} closeMenu={closeMenu} />}/>
 
+            <Route path='/products' element={<ProductsPage isMobile={isMobile} isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} closeMenu={closeMenu} />}/>
             <Route path='/alert-services' element={<ProductPageAlert isMobile={isMobile} isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} closeMenu={closeMenu} />}/>
             <Route path='/cloud-services' element={<ProductPageCloud isMobile={isMobile} isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} closeMenu={closeMenu} />}/>
             <Route path='/communication-gadgets' element={<ProductPageCommunication isMobile={isMobile} isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} closeMenu={closeMenu} />}/>

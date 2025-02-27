@@ -103,7 +103,7 @@ const Hero = ({  }) => {
 
         <div className='flex'>
             <div 
-              // onClick={() => { handleSubscribeToNewsletter() }}
+              onClick={() => { navigateTo('/products') }}
               style={{  width: '200px', background: '#FFFFFF', fontWeight: '600', color: '#424218' }}
               className='text-center mt-2 border-white rounded-sm py-3  text-sm cursor-pointer mr-2'>
               View Products
