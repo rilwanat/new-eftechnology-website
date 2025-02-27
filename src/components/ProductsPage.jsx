@@ -173,22 +173,22 @@ export default function ProductsPage({
             <div className="px-8 text-center" style={{ fontSize: '16px', color: '#777777'   }}>
               Providing unlimited cloud storage services and backup services on data most important to you.
             </div>
-            <a href='/e-commerce' className="mt-4 cursor-pointer text-darkTheme hover:text-theme" style={{ fontWeight: '600', fontSize: '16px' }}>Read More</a>
+            <a href='/cloud-services' className="mt-4 cursor-pointer text-darkTheme hover:text-theme" style={{ fontWeight: '600', fontSize: '16px' }}>Read More</a>
           </div>
           <div className='flex flex-col w-full md:w-1/3 justify-center items-center rounded-md shadow-md m-2 p-8 bg-white min-h-[200px]'>
           <DeviceUnknownIcon className="mb-4" style={{ width: '40px', height: '40px', color: '#CBD67A' }}/>
             <div className="mb-2" style={{ fontWeight: '600', fontSize: '16px' }}>EFPhonetaxi</div>
             <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
             <div className="px-8 text-center" style={{ fontSize: '16px', color: '#777777'   }}>
-            An anti-theft system that protects user data and prevents the sale of stolen phones, and enables arrest of offenders.
+            An anti-theft system that protects user data and prevents the sale of stolen phones, and arrest of offenders.
             </div>
-            <a href='/e-commerce' className="mt-4 cursor-pointer text-darkTheme hover:text-theme" style={{ fontWeight: '600', fontSize: '16px' }}>Read More</a>
+            <a href='/ef-phone' className="mt-4 cursor-pointer text-darkTheme hover:text-theme" style={{ fontWeight: '600', fontSize: '16px' }}>Read More</a>
           </div>
 
         </div>
 
 
-        <div className=' flex flex-col md:flex-row items-center justify-between mt-4 '>
+        <div className=' flex flex-col md:flex-row items-center justify-between mt-4 mb-8'>
           
           <div className='flex flex-col w-full md:w-1/3 justify-center items-center rounded-md shadow-md m-2 p-8 bg-white min-h-[200px]'>
           <CampaignIcon className="mb-4" style={{ width: '40px', height: '40px', color: '#CBD67A' }}/>
