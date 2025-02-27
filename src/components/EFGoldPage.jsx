@@ -102,7 +102,9 @@ const validateCheckboxes = () => {
 };
 
 const handleSendMessage = async () => {
-  if (!validateInputs() || !validateCheckboxes()) {
+  if (!validateInputs() 
+    // || !validateCheckboxes()
+  ) {
       return;
   }
 
