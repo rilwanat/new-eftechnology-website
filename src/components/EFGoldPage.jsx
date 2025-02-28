@@ -199,11 +199,11 @@ const handleSendMessage = async () => {
 const settings = {
   dots: false,
   infinite: true,
-  speed: 3000,
+  speed: 2000,
   slidesToShow: 3,
   slidesToScroll: 1,
   autoplay: true,
-  autoplaySpeed: 7000,
+  autoplaySpeed: 4000,
   responsive: [
     {
       breakpoint: 1024,

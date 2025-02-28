@@ -48,25 +48,27 @@ export default function MenuBar({
       { label: 'EFBroadband', href: '/ef-broadband' },
       { label: 'Communication Gadgets', href: '/communication-gadgets' },
       { label: 'E-Commerce', href: '/e-commerce' },
-      { label: 'Cloud Services', href: '/cloud-services' },
-      { label: 'EFPhonetaxi', href: '/ef-phone' },
+      // { label: 'Cloud Services', href: '/cloud-services' },
+      // { label: 'EFPhonetaxi', href: '/ef-phone' },
       { label: 'Alert Services', href: '/alert-services' },
       { label: 'Tracker System And Devices', href: '/tracker-systems' },
     ] },
     { label: 'EF GOLD', href: '/ef-gold' },
     { label: 'EF ENERGY', href: '/ef-energy' },
-    { label: 'BUSINESSES', dropdown: [
+    { label: 'SUBSIDIARIES', dropdown: [
+      { label: 'EFGold', href: '/ef-gold' },
+      { label: 'EFEnergy', href: '/ef-energy' },
       { label: 'EFPhoneTaxi', href: '/ef-phonetaxi' },
       { label: 'EFWaste Management', href: '/ef-waste-management' },
       { label: 'EFSkyview', href: '/ef-skyview' },
-      { label: 'EFContact', href: '/ef-contact' },
-      { label: 'EFWireless', href: '/ef-wireless' },
+      { label: 'EFPriceCheck', href: '/ef-contact' },
+      // { label: 'EFWireless', href: '/ef-wireless' },
     ] },
-    { label: 'MEDIA', dropdown: [
-      { label: 'News', href: '/news' },
-      { label: 'Articles', href: '/articles' },
-      { label: 'Gallery', href: '/gallery' },
-    ] },
+    // { label: 'MEDIA', dropdown: [
+    //   { label: 'News', href: '/news' },
+    //   { label: 'Articles', href: '/articles' },
+    //   { label: 'Gallery', href: '/gallery' },
+    // ] },
     { label: 'CONTACT', href: '/contact' },
   ];
   useEffect(() => {

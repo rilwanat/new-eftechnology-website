@@ -18,7 +18,7 @@ const Hero = ({  }) => {
   ];
 
   const headerText = [
-    'We Are Your Total Solutions Partner & Provider',
+    'We Are Your Total Technology Solutions Partner & Provider',
     'Unique Support and Planning For Your Business',
     'Leaders In Tracking Systems And Other Devices',
 ];
