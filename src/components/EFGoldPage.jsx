@@ -14,6 +14,8 @@ import gold3 from '../assets/images/gold/gold3.png';
 import gold4 from '../assets/images/gold/gold4.png';
 import gold5 from '../assets/images/gold/gold5.png';
 import gold6 from '../assets/images/gold/gold6.png';
+import gold7 from '../assets/images/gold/gold7.png';
+import gold8 from '../assets/images/gold/gold8.png';
 
 import logo from '../assets/images/logo.png';
 
@@ -39,6 +41,10 @@ export default function EFGoldPage({
     gold2,
     gold3,
     gold4,
+    gold5,
+    gold6,
+    gold7,
+    gold8,
   ];
   // const [currentSlides, setCurrentSlides] = useState(Array(goldImages.length).fill(0));
   // const [zoomedItemId, setZoomedItemId] = useState(null);
@@ -193,11 +199,11 @@ const handleSendMessage = async () => {
 const settings = {
   dots: false,
   infinite: true,
-  speed: 500,
+  speed: 3000,
   slidesToShow: 3,
   slidesToScroll: 1,
   autoplay: true,
-  autoplaySpeed: 3000,
+  autoplaySpeed: 7000,
   responsive: [
     {
       breakpoint: 1024,
