@@ -8,6 +8,7 @@ import Parallax from './Parallax';
 import HeaderParallax from './HeaderParallax';
 import conference from '../assets/images/conference-wide.jpg';
 
+
 import PlaceIcon from '@mui/icons-material/Place';
 import EmailIcon from '@mui/icons-material/Email';
 import CallIcon from '@mui/icons-material/Call';
