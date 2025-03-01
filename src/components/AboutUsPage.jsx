@@ -8,6 +8,7 @@ import MenuBar from './navbar/MenuBar';
 import Parallax from './Parallax';
 import HeaderParallax from './HeaderParallax';
 import conference from '../assets/images/conference-wide.jpg';
+import md from '../assets/images/md.jpg';
 
 
 import PlaceIcon from '@mui/icons-material/Place';
@@ -70,7 +71,7 @@ export default function AboutUsPage({
           <div className='w-full rounded-lg'>
 
           {isMenuOpen ? <div></div> :  <HeaderParallax 
-        imageUrl={conference}//"/images/your-image.jpg";
+        imageUrl={md}//"/images/your-image.jpg";
             title={"About Us"}
             subtitle={""}
         />}

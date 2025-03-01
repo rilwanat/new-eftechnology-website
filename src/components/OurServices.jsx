@@ -32,8 +32,11 @@ function OurServices({ }) {
                 
                 >
           <div className='flex flex-col items-center justify-center mt-12 mb-2'>
-            <p className=' mb-2' style={{ color: '', fontWeight: '600', fontSize: '24px' }}>Our Products</p>
+            <p className=' mb-2' style={{ color: '', fontWeight: '600', fontSize: '24px' }}>Let's help provide you with top notch services and secure your valuable assets</p>
             <div className='bg-theme mb-2' style={{ width: '80px', height: '4px' }}></div>
+            <div className="px-8 text-center" style={{ fontSize: '16px', color: '#777777'   }}>
+              We are here to be your go to company from everything related to security, broadband, safety and ecommerce services
+            </div>
           </div>
 
 

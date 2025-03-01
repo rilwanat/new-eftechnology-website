@@ -45,6 +45,7 @@ export default function EFGoldPage({
     gold6,
     gold7,
     gold8,
+    gold9,
   ];
   // const [currentSlides, setCurrentSlides] = useState(Array(goldImages.length).fill(0));
   // const [zoomedItemId, setZoomedItemId] = useState(null);

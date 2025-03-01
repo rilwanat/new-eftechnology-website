@@ -19,6 +19,11 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 
 import gideon from '../assets/images/team/team-gideon.png';
 import gideon2 from '../assets/images/team/team-gideon2.png';
+
+import nix from '../assets/images/team/nix.png';
+import hardy from '../assets/images/team/hardy.png';
+import vara from '../assets/images/team/vara.png';
+import tom from '../assets/images/team/tom.png';
 import team from '../assets/images/team/team.png';
 
 import background from '../assets/images/background.png';
@@ -99,14 +104,14 @@ export default function OurTeamPage({
           <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
             
             <div className="px-8 text-center mb-4"  style={{fontSize: '16px', color: '#777777'  }}>
-            Mr. Egbuchulam has developed solutions to many of Nigeria’s infrastructure needs.
+            Mr. Gideon has developed solutions to many infrastructure needs.
             </div>
             
           </div>
           <div className='flex flex-col w-full md:w-1/3 justify-center items-center rounded-md shadow-md m-2 p-4 bg-white min-h-[200px]'>
           <img
                           className="block h-60 w-60 mb-2 mt-4"
-                          src={team}
+                          src={nix}
                           alt="Logo"
                           onClick={() => { navigate('/'); }}
                           style={{ cursor: 'pointer' }}
@@ -123,7 +128,7 @@ export default function OurTeamPage({
           <div className='flex flex-col w-full md:w-1/3 justify-center items-center rounded-md shadow-md m-2 p-4 bg-white min-h-[200px]'>
           <img
                           className="block h-60 w-60 mb-2 mt-4"
-                          src={team}
+                          src={hardy}
                           alt="Logo"
                           onClick={() => { navigate('/'); }}
                           style={{ cursor: 'pointer' }}
@@ -133,7 +138,7 @@ export default function OurTeamPage({
             <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
 
             <div className="px-8 text-center mb-4"  style={{fontSize: '16px', color: '#777777'  }}>
-            Business leader with unique blend of engineering, sales, operations and..
+            Business leader with unique blend of engineering & sales.
             </div>
             
           </div>
@@ -161,7 +166,7 @@ export default function OurTeamPage({
           <div className='flex flex-col w-full md:w-1/3 justify-center items-center rounded-md shadow-md m-2 p-4 bg-white min-h-[200px]'>
           <img
                           className="block h-60 w-60 mb-2 mt-4"
-                          src={team}
+                          src={vara}
                           alt="Logo"
                           onClick={() => { navigate('/'); }}
                           style={{ cursor: 'pointer' }}
@@ -171,14 +176,14 @@ export default function OurTeamPage({
             <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
 
             <div className="px-8 text-center mb-4"  style={{fontSize: '16px', color: '#777777'  }}>
-            Electrical Engineer with 20+ in Industrial Electronics, Instrumentation and control..
+            Electrical Engineer with 20+ experience in Industrial Electronics.
             </div>
             
           </div>
           <div className='flex flex-col w-full md:w-1/3 justify-center items-center rounded-md shadow-md m-2 p-4 bg-white min-h-[200px]'>
           <img
                           className="block h-60 w-60 mb-2 mt-4"
-                          src={team}
+                          src={tom}
                           alt="Logo"
                           onClick={() => { navigate('/'); }}
                           style={{ cursor: 'pointer' }}
@@ -188,7 +193,7 @@ export default function OurTeamPage({
             <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
 
             <div className="px-8 text-center mb-4"  style={{fontSize: '16px', color: '#777777'  }}>
-            Technically-savvy professional with a career reflecting strong leadership.
+            Tech-savvy professional reflecting strong leadership.
             </div>
             
           </div>
