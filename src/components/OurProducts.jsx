@@ -49,7 +49,7 @@ function OurProducts({ }) {
             <div className="mb-2" style={{ fontWeight: '600', fontSize: '16px' }}>Tracker Systems and Devices</div>
             <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
             <div className="px-8 text-center" style={{ fontSize: '16px', color: '#777777'   }}>
-              Our top notch trackers are of designed to give you the best security in your home, automobile, and in public.
+              Our top notch trackers are designed to give you the best security in your home, automobile, and in public.
             </div>
             <a href='/tracker-systems' className="mt-4 cursor-pointer text-darkTheme hover:text-theme" style={{ fontWeight: '600', fontSize: '16px' }}>Read More</a>
           </div>
@@ -58,7 +58,7 @@ function OurProducts({ }) {
             <div className="mb-2" style={{ fontWeight: '600', fontSize: '16px' }}>Alert Services</div>
             <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
             <div className="px-8 text-center" style={{ fontSize: '16px', color: '#777777'   }}>
-              Providing Emergency Alert service for a nation, state or local government using the state of the art technology.
+              Providing Emergency Alert service to nations, state or local government using state of the art technology.
             </div>
             <a href='/alert-services' className="mt-4 cursor-pointer text-darkTheme hover:text-theme" style={{ fontWeight: '600', fontSize: '16px' }}>Read More</a>
           </div>
@@ -104,7 +104,7 @@ function OurProducts({ }) {
             <div className="mb-2" style={{ fontWeight: '600', fontSize: '16px' }}>Security Products/Services</div>
             <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
             <div className="px-8 text-center" style={{ fontSize: '16px', color: '#777777'  }}>
-              We provide products and services to a nation state security forces for civil defence and protection.
+              We provide products and services to nations' security forces for civil defence and protection.
             </div>
             <a href='/security-products' className="mt-4 cursor-pointer text-darkTheme hover:text-theme" style={{ fontWeight: '600', fontSize: '16px' }}>Read More</a>
           </div>

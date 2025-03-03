@@ -32,10 +32,10 @@ function OurServices({ }) {
                 
                 >
           <div className='flex flex-col items-center justify-center mt-12 mb-2'>
-            <p className=' mb-2' style={{ color: '', fontWeight: '600', fontSize: '24px' }}>Let's help provide you with top notch services and secure your valuable assets</p>
+            <p className=' mb-2' style={{ color: '', fontWeight: '600', fontSize: '24px' }}>We provide you with top notch services to secure your valuable assets</p>
             <div className='bg-theme mb-2' style={{ width: '80px', height: '4px' }}></div>
             <div className="px-8 text-center" style={{ fontSize: '16px', color: '#777777'   }}>
-              We are here to be your go to company from everything related to security, broadband, safety and ecommerce services
+            We are your go-to company for everything related to security, broadband, safety and e-commerce services.
             </div>
           </div>
 
@@ -69,7 +69,7 @@ function OurServices({ }) {
             <div className="mb-4" style={{ fontWeight: '600', fontSize: '16px' }}>Why Choose Us</div>
             <CampaignIcon className="mb-2" style={{ width: '40px', height: '40px', color: '#CBD67A' }}/>
             <div className="px-8 text-center"  style={{fontSize: '16px', color: '#777777'  }}>
-            We have a track record of providing world class services which is why we hav stayed relevant since 1995.
+            We have a track record of providing world class services which is why we have stayed relevant since 1995.
             </div>
             {/* <div className="mt-4 cursor-pointer" style={{ fontWeight: '600', color: '#CBD67A' }}>Read More</div> */}
           </div>

@@ -44,7 +44,7 @@ function ChairmansMessage({ }) {
               <div className="flex flex-col">
                 <div className="mb-2" style={{ fontWeight: '600', fontSize: '16px' }}>24/7 Live Support</div>
                 <div className='bg-theme mb-2' style={{ width: '60px', height: '1px' }}></div>
-                <div style={{fontSize: '16px', color: '#777777'  }}>We adhere to the highest ethical standards and operate in a manner that is socially responsible and acceptable“we care how results are achieved”.</div>
+                <div style={{fontSize: '16px', color: '#777777'  }}>We provide 24/7 live support, ensuring reliability and responsiveness while upholding the highest ethical standards in every interaction.</div>
               </div>
               
             </div>
