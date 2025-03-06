@@ -133,14 +133,16 @@ const isValidEmail = (email) => {
 
 
 const handleSendMessage = async () => {
+  
   if (!validateInputs() 
     // || !validateCheckboxes()
   ) {
+    alert("Please, enter a valid inputs");
       return;
   }
 
 
-  if (!isValidNumber(number)) {
+  if (!isValidNumber(phoneNumber)) {
     // openNotificationModal(false, currentPageName + " Form Error", 'Invalid email address');
     alert("Please, enter a valid phone number, numbers only.");
     return;
@@ -159,19 +161,19 @@ const handleSendMessage = async () => {
   //     .map((checkbox) => checkbox.label);
 
   const formData = new FormData();
-  formData.append('companyName', companyName);
+  formData.append('company_name', companyName);
   formData.append('address', address);
-  formData.append('phoneNumber', phoneNumber);
+  formData.append('phone_number', phoneNumber);
   formData.append('email', email);
-  formData.append('contactName', contactName);
+  formData.append('contact_name', contactName);
   formData.append('remark', remark);
-  // formData.append('selectedOptions', JSON.stringify(selectedOptions));
+  formData.append('prodcts_of_interest', 'Gold');//JSON.stringify(selectedOptions));
   if (file) {
-      formData.append('file', file);
+      formData.append('upload_file', file);
   }
 
   try {
-      const response = await fetch('https://eftechnology.net/new-eftechnology-php/send-mail.php', {
+      const response = await fetch('https://api.eftechnology.net/api/send/contact-email', {
           method: 'POST',
           body: formData
       });

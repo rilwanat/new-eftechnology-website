@@ -80,35 +80,45 @@ export default function MenuBar({
     setHoveredIndex(index);
   };
 
-  const handleMouseLeave = (index) => {
+  // const handleMouseLeave = (index) => {
+  //   setHoveredIndex(null);
+  //   setTimeout(() => {
+  //     if (hoveredIndex === null) {
+  //       setActiveDropdown(null);
+  //     }
+  //   }, 100);
+  // };
+  const handleMouseLeave = (event) => {
     setHoveredIndex(null);
-    setTimeout(() => {
-      if (hoveredIndex === null) {
-        setActiveDropdown(null);
-      }
-    }, 100);
+    setActiveDropdown(null);
+    // if (!event.currentTarget.contains(event.relatedTarget)) {
+    //   setHoveredIndex(null);
+    //   setTimeout(() => {
+    //     if (hoveredIndex === null) {
+    //       setActiveDropdown(null);
+    //     }
+    //   }, 200);
+    // }
   };
+  
+  
 
 
 
   return (
     
 
-<div
+<div 
+onMouseLeave={(e) => handleMouseLeave(e)}
         className={`sticky top-0  z-[1000] bg-white"
         }`}
       >
         <div className='px-8 md:px-4 lg:px-16 xl:px-24 2xl:px-80 py-2 flex flex-col md:flex-row justify-between items-center bg-white'
-        // onMouseEnter={() =>  {
-        //   setHoveredIndex(null);
-        //   setTimeout(() => {
-        //     if (hoveredIndex === null) {
-        //       setActiveDropdown(null);
-        //     }
-        //   }, 100);
-        //   }}
+
         > 
-                <div className="flex w-full justify-between items-center">
+                <div 
+                
+                className="flex w-full justify-between items-center">
                   <a href='/'>
                   <img
                     className="block h-20 w-auto max-w-none"
@@ -120,7 +130,9 @@ export default function MenuBar({
                   </a>
         
                   <div className='ml-0 '>
-                  <div className="flex w-full items-center z-50" style={{ height: '40px' }}>
+                  <div 
+                  
+                  className="flex w-full items-center z-50" style={{ height: '40px' }}>
       {menuItems.map((item, index) => (
         <div
           key={index}
