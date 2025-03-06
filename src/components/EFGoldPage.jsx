@@ -32,12 +32,30 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 
-
+import NotificationModal from './modals/NotificationModal';
 
 
 export default function EFGoldPage({ 
     isMobile, isMenuOpen, toggleMenu, closeMenu
  }) {
+
+  //notification modal
+  const [notificationType, setNotificationType] = useState(false);
+  const [notificationTitle, setNotificationTitle] = useState("");
+  const [notificationMessage, setNotificationMessage] = useState("");
+  const [isNotificationModalOpen, setIsNotificationModalOpen] = useState(false);
+  const openNotificationModal = (type, title, message) => {
+    setNotificationType(type);
+    setNotificationTitle(title);
+    setNotificationMessage(message);
+
+    setIsNotificationModalOpen(true);
+  };
+  const closeNotificationModal = () => {
+    setIsNotificationModalOpen(false);
+  };
+  //notification modal
+
 
 
   const goldImages = [
@@ -56,6 +74,7 @@ export default function EFGoldPage({
   ];
   // const [currentSlides, setCurrentSlides] = useState(Array(goldImages.length).fill(0));
   // const [zoomedItemId, setZoomedItemId] = useState(null);
+  const [isMessageSending, setIsMessageSending] = useState(false);
 
   const [checkboxes, setCheckboxes] = useState([
     { id: 1, label: 'JET-A1', checked: false },
@@ -99,7 +118,9 @@ export default function EFGoldPage({
     if (!remark.trim()) missingFields.push('Remark');
 
     if (missingFields.length > 0) {
-        alert(`Please fill in the following required fields: ${missingFields.join(', ')}`);
+        // alert(`Please fill in the following required fields: ${missingFields.join(', ')}`);
+        openNotificationModal(false, "EF Gold", `Please fill in the following required fields: ${missingFields.join(', ')}`);
+        setIsNotificationModalOpen(true);
         return false;
     }
 
@@ -109,7 +130,9 @@ export default function EFGoldPage({
 const validateCheckboxes = () => {
     const selectedCheckboxes = checkboxes.filter((checkbox) => checkbox.checked);
     if (selectedCheckboxes.length === 0) {
-        alert('Please select at least one product of interest.');
+        // alert('Please select at least one product of interest.');
+        openNotificationModal(false, "EF Gold", "Please select at least one product of interest.");
+        setIsNotificationModalOpen(true);
         return false;
     }
     return true;
@@ -134,23 +157,37 @@ const isValidEmail = (email) => {
 
 const handleSendMessage = async () => {
   
+  if (isMessageSending) {
+    // alert("Please, wait message is sending");
+    openNotificationModal(false, "EF Gold", "Please, wait message is sending");
+        setIsNotificationModalOpen(true);
+
+    return;
+  }
+  
   if (!validateInputs() 
     // || !validateCheckboxes()
   ) {
-    alert("Please, enter a valid inputs");
+    // alert("Please, enter a valid inputs");
+    // openNotificationModal(false, "EF Gold", "Please, enter a valid inputs");
+    // setIsNotificationModalOpen(true);
       return;
   }
 
 
   if (!isValidNumber(phoneNumber)) {
     // openNotificationModal(false, currentPageName + " Form Error", 'Invalid email address');
-    alert("Please, enter a valid phone number, numbers only.");
+    // alert("Please, enter a valid phone number, numbers only.");
+    openNotificationModal(false, "EF Gold", "Please, enter a valid phone number, numbers only.");
+    setIsNotificationModalOpen(true);
     return;
 }
 
   if (!isValidEmail(email)) {
     // openNotificationModal(false, currentPageName + " Form Error", 'Invalid email address');
-    alert("Please, enter a valid email.");
+    // alert("Please, enter a valid email.");
+    openNotificationModal(false, "EF Gold", "Please, enter a valid email.");
+    setIsNotificationModalOpen(true);
     return;
 }
 
@@ -172,6 +209,8 @@ const handleSendMessage = async () => {
       formData.append('upload_file', file);
   }
 
+
+  setIsMessageSending(true);
   try {
       const response = await fetch('https://api.eftechnology.net/api/send/contact-email', {
           method: 'POST',
@@ -181,7 +220,8 @@ const handleSendMessage = async () => {
       const result = await response.json();
 
       if (result.success) {
-          alert("Message was sent successfully");
+
+        
           // Reset form
           setCompanyName('');
           setAddress('');
@@ -191,12 +231,25 @@ const handleSendMessage = async () => {
           setRemark('');
           setFile(null);
           setCheckboxes(checkboxes.map(checkbox => ({ ...checkbox, checked: false })));
+
+          // alert("Message was sent successfully");
+          openNotificationModal(true, "EF Gold", "Message was sent successfully");
+          setIsNotificationModalOpen(true);
+          
       } else {
-          alert("Failed to send message");
+          // alert("Failed to send message");
+          openNotificationModal(false, "EF Gold", "Failed to send message");
+          setIsNotificationModalOpen(true);
       }
+
+      setIsMessageSending(false);
   } catch (error) {
+    setIsMessageSending(false);
+
       console.error("Error sending message:", error);
-      alert("An error occurred while sending the message");
+      // alert("An error occurred while sending the message");
+      openNotificationModal(false, "EF Gold", "An error occurred while sending the message");
+          setIsNotificationModalOpen(true);
   }
 };
 
@@ -454,7 +507,7 @@ We operate in the following listed countries: Angola, Benin Republic, Burkina Fa
               onClick={() => { handleSendMessage() }}
               style={{ borderWidth: '0px', backgroundColor: '#CBD67A', width: '200px', color: '#424218' }}
               className='mt-4  text-center rounded-sm px-4 py-2  text-sm cursor-pointer mb-20'>
-              Send Message 
+              {isMessageSending ? 'Please wait..' : 'Send Message'} 
             </div>
 
       </div>
@@ -468,6 +521,16 @@ We operate in the following listed countries: Angola, Benin Republic, Burkina Fa
       <Footer 
         isMobile={isMobile} isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} closeMenu={closeMenu}
       />
+
+
+
+<NotificationModal
+              isOpen={isNotificationModalOpen}
+              onRequestClose={closeNotificationModal}
+              notificationType={notificationType}
+              notificationTitle={notificationTitle}
+              notificationMessage={notificationMessage}
+            />
 
 
     </div>
