@@ -60,7 +60,9 @@ function App() {
 
           <Routes>
 
-            <Route path="/*" element={<div>NOT FOUND</div>} /> 
+          <Route path='/' element={<EFGoldPage isMobile={isMobile} isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} closeMenu={closeMenu} />}/>
+
+            {/* <Route path="/*" element={<div>NOT FOUND</div>} /> 
             <Route path='/' element={<LandingPage isMobile={isMobile} isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} closeMenu={closeMenu} />}/>
 
             <Route path='/about-us' element={<AboutUsPage isMobile={isMobile} isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} closeMenu={closeMenu} />}/>
@@ -82,7 +84,7 @@ function App() {
             <Route path='/ef-broadband' element={<ProductPageEFBroadband isMobile={isMobile} isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} closeMenu={closeMenu} />}/>
             <Route path='/ef-phone' element={<ProductPageEFPhone isMobile={isMobile} isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} closeMenu={closeMenu} />}/>
             <Route path='/security-products' element={<ProductPageSecurity isMobile={isMobile} isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} closeMenu={closeMenu} />}/>
-            <Route path='/tracker-systems' element={<ProductPageTracker isMobile={isMobile} isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} closeMenu={closeMenu} />}/>
+            <Route path='/tracker-systems' element={<ProductPageTracker isMobile={isMobile} isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} closeMenu={closeMenu} />}/> */}
 
             </Routes>
         </div>

@@ -129,7 +129,7 @@ onMouseLeave={(e) => handleMouseLeave(e)}
                   />
                   </a>
         
-                  <div className='ml-0 '>
+                  {/* <div className='ml-0 '>
                   <div 
                   
                   className="flex w-full items-center z-50" style={{ height: '40px' }}>
@@ -184,17 +184,15 @@ onMouseLeave={(e) => handleMouseLeave(e)}
                   >
                     {subItem.label}
                   </a>
-                  {/* {subIndex != item.dropdown.length - 1 ? <hr className='-mx-2' style={{ color: '#dddddd' }}/> : <div></div>} */}
                   </div>
                 ))}
               </motion.div>
             )}
           </AnimatePresence>
-          {/* <hr className='my-2'/> */}
         </div>
       ))}
     </div>
-                  </div>
+                  </div> */}
                 </div>
         
                 

@@ -56,6 +56,30 @@ export default function EFGoldPage({
   };
   //notification modal
 
+  const getEmbedUrl = (url) => {
+    const regex = /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/;
+    const match = url.match(regex);
+    return match ? `https://www.youtube.com/embed/${match[1]}` : null;
+  };
+
+  const videos = [
+    getEmbedUrl("https://www.youtube.com/watch?v=BAwivnIIZbc"),
+    getEmbedUrl("https://www.youtube.com/watch?v=7Qxg8P5fud8"),
+    getEmbedUrl("https://www.youtube.com/watch?v=9AQWMXEcTl8"),
+    getEmbedUrl("https://www.youtube.com/watch?v=-zEZYMWH7XI"),
+    getEmbedUrl("https://www.youtube.com/watch?v=uTZT9XUGFvE"),
+    getEmbedUrl("https://www.youtube.com/watch?v=QzooAJ3f4T8"),
+    getEmbedUrl("https://www.youtube.com/watch?v=VD5CKXT3JXA"),
+  ];
+  const settingsVideo = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+  };
 
 
   const goldImages = [
@@ -384,6 +408,22 @@ We operate in the following listed countries: Angola, Benin Republic, Burkina Fa
     </div>
 
 
+
+    <Slider {...settingsVideo}>
+      {videos.map((video, index) => (
+        <div key={index} className="video-slide">
+          <iframe
+            width="100%"
+            height="400px"
+            src={video}
+            title={`YouTube Video ${index + 1}`}
+            frameBorder="0"
+            allow="autoplay; encrypted-media"
+            allowFullScreen
+          ></iframe>
+        </div>
+      ))}
+    </Slider>
 
 
 

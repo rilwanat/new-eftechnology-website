@@ -78,7 +78,7 @@ function Footer({
           </div>
 
           <div className="flex flex-col md:items-start md:w-1/3 my-4 md:h-60" style={{ color: '#eeeeee' }}>
-          <p className=' mb-2' style={{ color: '#eeeeee', fontSize: '20px' }}>PRODUCTS</p>
+          <p className=' mb-2' style={{ color: '#eeeeee', fontSize: '20px' }}>OTHER PRODUCTS</p>
           
           {/* <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div> */}
 

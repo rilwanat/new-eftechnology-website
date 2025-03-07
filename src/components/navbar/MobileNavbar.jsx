@@ -68,7 +68,7 @@ export default function MobileNavbar({
             </div>
           </div> */}
 
-          <IconButton
+          {/* <IconButton
           edge="start"
           aria-label="menu"
           sx={{ color: 'white', marginRight: 2 }} 
@@ -79,7 +79,7 @@ export default function MobileNavbar({
             <div className='bg-white' style={{ width: '20px', height: '2px', marginBottom: '6px' }}></div>
             <div className='bg-white' style={{ width: '20px', height: '2px', }}></div>
           </div>
-        </IconButton>
+        </IconButton> */}
 
         </div>
 
