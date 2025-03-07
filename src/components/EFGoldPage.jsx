@@ -219,6 +219,8 @@ const handleSendMessage = async () => {
 
       const result = await response.json();
 
+      alert(JSON.stringify(result, null, 2));
+
       if (result.success) {
 
         
