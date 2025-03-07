@@ -221,7 +221,7 @@ const handleSendMessage = async () => {
 
       alert(JSON.stringify(result, null, 2));
 
-      if (result.success) {
+      if (result.message == "Message Sent") {
 
         
           // Reset form
