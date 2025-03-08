@@ -59,7 +59,7 @@ export default function EFGoldPage({
   const getEmbedUrl = (url) => {
     const regex = /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/;
     const match = url.match(regex);
-    return match ? `https://www.youtube.com/embed/${match[1]}` : null;
+    return match ? `https://www.youtube.com/embed/${match[1]}?rel=0&showinfo=0&controls=0` : null;
   };
 
   const videos = [
@@ -79,6 +79,32 @@ export default function EFGoldPage({
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 5000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
 
@@ -96,6 +122,45 @@ export default function EFGoldPage({
     gold11,
     gold12,
   ];
+const settings = {
+  dots: false,
+  infinite: true,
+  speed: 2000,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 4000,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        initialSlide: 2,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+};
+
+
+
+
   // const [currentSlides, setCurrentSlides] = useState(Array(goldImages.length).fill(0));
   // const [zoomedItemId, setZoomedItemId] = useState(null);
   const [isMessageSending, setIsMessageSending] = useState(false);
@@ -284,44 +349,6 @@ const handleSendMessage = async () => {
 
 
 
-
-const settings = {
-  dots: false,
-  infinite: true,
-  speed: 2000,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 4000,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: true,
-      },
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        initialSlide: 2,
-      },
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      },
-    },
-  ],
-};
-
-
   return (
 
 
@@ -419,7 +446,8 @@ We operate in the following listed countries: Angola, Benin Republic, Burkina Fa
             title={`YouTube Video ${index + 1}`}
             frameBorder="0"
             allow="autoplay; encrypted-media"
-            allowFullScreen
+            allowFullScreen 
+            onContextMenu={(e) => e.preventDefault()}
           ></iframe>
         </div>
       ))}
