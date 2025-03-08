@@ -59,7 +59,7 @@ export default function EFGoldPage({
   const getEmbedUrl = (url) => {
     const regex = /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/;
     const match = url.match(regex);
-    return match ? `https://www.youtube.com/embed/${match[1]}?rel=0&showinfo=0&controls=0` : null;
+    return match ? `https://www.youtube.com/embed/${match[1]}?rel=0` : null;
   };
 
   const videos = [
@@ -436,6 +436,15 @@ We operate in the following listed countries: Angola, Benin Republic, Burkina Fa
 
 
 
+<div className="video-container" 
+style={{
+  position: "relative",
+  width: "560px",
+  height: "400px",
+  margin: "auto",
+}}
+>
+  
     <Slider {...settingsVideo}>
       {videos.map((video, index) => (
         <div key={index} className="video-slide">
@@ -452,7 +461,30 @@ We operate in the following listed countries: Angola, Benin Republic, Burkina Fa
         </div>
       ))}
     </Slider>
-
+{/* Top Overlay to Hide Branding */}
+<div className="overlay top-overlay" 
+style={{
+  position: "absolute",
+  top: 0,
+  left: 0,
+  width: "100%",
+  height: "60px",
+  background: "black",
+  zIndex: 10,
+}}></div>
+      {/* Bottom Overlay to Hide Controls */}
+      <div className="overlay bottom-overlay"
+      style={{
+        position: "absolute",
+        bottom: 0,
+        left: 0,
+        width: "100%",
+        height: "50px",
+        background: "black",
+        zIndex: 10,
+      }}></div>
+    
+    </div>
 
 
 
