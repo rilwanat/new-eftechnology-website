@@ -39,6 +39,18 @@ export default function EFGoldPage({
     isMobile, isMenuOpen, toggleMenu, closeMenu
  }) {
 
+  const [isPlaying, setIsPlaying] = useState(false);
+  const sliderRef = useRef(null);
+  const handlePlay = () => {
+    setIsPlaying(true);
+    sliderRef.current?.slickPause(); // Stop auto-swiping
+  };
+  const handlePause = () => {
+    setIsPlaying(false);
+    sliderRef.current?.slickPlay(); // Resume auto-swiping
+  };
+
+
   //notification modal
   const [notificationType, setNotificationType] = useState(false);
   const [notificationTitle, setNotificationTitle] = useState("");
@@ -77,7 +89,7 @@ export default function EFGoldPage({
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: !isPlaying, // Disable autoplay when playing
     autoplaySpeed: 5000,
     responsive: [
       {
@@ -445,7 +457,7 @@ style={{
 }}
 >
   
-    <Slider {...settingsVideo}>
+    <Slider ref={sliderRef} {...settingsVideo}>
       {videos.map((video, index) => (
         <div key={index} className="video-slide">
           <iframe
