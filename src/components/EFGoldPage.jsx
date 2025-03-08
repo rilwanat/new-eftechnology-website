@@ -462,25 +462,25 @@ style={{
       ))}
     </Slider>
 {/* Top Overlay to Hide Branding */}
-<div className="overlay top-overlay" 
+<div className=" bg-gray-100" 
 style={{
   position: "absolute",
   top: 0,
   left: 0,
   width: "100%",
   height: "60px",
-  background: "black",
+  // background: "white",
   zIndex: 10,
 }}></div>
       {/* Bottom Overlay to Hide Controls */}
-      <div className="overlay bottom-overlay"
+      <div className=" bg-gray-100"
       style={{
         position: "absolute",
         bottom: 0,
         left: 0,
         width: "100%",
         height: "50px",
-        background: "black",
+        // background: "black",
         zIndex: 10,
       }}></div>
     
