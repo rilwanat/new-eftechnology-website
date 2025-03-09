@@ -23,7 +23,7 @@ export default function MobileNavbar({
  }) {
 
   return (
-    <div className="w-full fixed top-0 bg-darkTheme  pl-4 text-sm" style={{ zIndex: 9999 }}>
+    <div className="w-full fixed top-0 bg-darkTheme  pl-4 text-sm" style={{ zIndex: 10000  }}>
       <div className="flex justify-between py-2">
         
       <div className="flex ">

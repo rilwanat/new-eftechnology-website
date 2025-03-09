@@ -454,6 +454,7 @@ style={{
   width: "560px",
   height: "400px",
   margin: "auto",
+  zIndex: 1, // Lower than navbar
 }}
 >
   
