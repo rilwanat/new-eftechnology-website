@@ -313,14 +313,14 @@ const handleSendMessage = async () => {
 
   setIsMessageSending(true);
   try {
-      const response = await fetch('https://api.eftechnology.net/api/send/contact-email', {
+      const response = await fetch('/mail/send_contact_email.php', {
           method: 'POST',
           body: formData
       });
 
       const result = await response.json();
 
-      alert(JSON.stringify(result, null, 2));
+      // alert(JSON.stringify(result, null, 2));
 
       if (result.message == "Message Sent") {
 
