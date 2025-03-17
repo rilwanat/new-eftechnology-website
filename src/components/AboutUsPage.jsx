@@ -75,11 +75,12 @@ export default function AboutUsPage({
             title={"About Us"}
             subtitle={""}
         />}
-
-
+        
+        
+        <WhoWeAre />
 
             <OurServices />
-            <WhoWeAre />
+            
             <OurPartners />
 
 
