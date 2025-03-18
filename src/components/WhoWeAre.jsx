@@ -17,12 +17,12 @@ function WhoWeAre({ }) {
     return (
         <div className="px-8 md:px-4 lg:px-16 xl:px-24 2xl:px-80 py-2 mt-4"
         
-        // style={{
-        //                       backgroundImage: `url(${background})`, 
-        //                       backgroundAttachment: 'fixed',
-        //                       backgroundSize: 'contain',
-        //                       backgroundPosition: 'center',
-        //                     }}
+        style={{
+                              backgroundImage: `url(${background})`, 
+                              backgroundAttachment: 'fixed',
+                              backgroundSize: 'contain',
+                              backgroundPosition: 'center',
+                            }}
         >          
 
 <div className=' flex flex-col md:flex-row items-center justify-between mt-2 '>
@@ -35,7 +35,7 @@ function WhoWeAre({ }) {
           </div>
           <div className='flex flex-col w-full md:w-1/2 justify-center  mx-2 p-4'>
             
-            <img className="w-full h-full object-scale-down" src={conference} alt="" />
+            <img className="w-full h-full object-scale-down rounded-lg" src={conference} alt="" />
           </div>
 
         </div>
