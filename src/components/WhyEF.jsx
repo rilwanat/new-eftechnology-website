@@ -19,7 +19,7 @@ function WhyEF({ }) {
 <div className=' flex flex-col md:flex-row items-center justify-between mt-2 '>
 <div className='flex flex-col w-full md:w-1/2 justify-center  mx-2 p-4 min-h-[420px]'>
             
-            <img className="w-full h-full object-scale-down  shadow-lg" src={why} alt="" />
+            <img className="w-full h-full object-scale-down rounded-lg shadow-lg" src={why} alt="" />
           </div>
 
 
