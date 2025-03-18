@@ -97,7 +97,7 @@ export default function ContactPage({
             <hr className='my-2' style={{ color: '#CBD67A'  }}/>
             <div className='flex mr-4'>
               <div className='mr-1'><PlaceIcon style={{ color: '#CBD67A'  }}/></div>
-              <div className='' style={{fontSize: '16px', color: '#777777'  }}>No. 31, Pope John Paul Street, maitama, FCT Abuja</div>
+              <div className='' style={{fontSize: '16px', color: '#777777'  }}>No. 31, Pope John Paul Street, Maitama, F.C.T Abuja, Nigeria.</div>
             </div>
 
             <div className='text-lg mt-4' style={{ fontWeight: '600', cursor: 'pointer' }}>Office Hours</div>

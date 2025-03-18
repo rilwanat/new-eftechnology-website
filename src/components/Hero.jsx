@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 
 
+import hero0 from '../assets/images/hero/hero0.jpg';
 import hero1 from '../assets/images/hero/hero1.jpg';
 import hero2 from '../assets/images/hero/hero2.jpg';
 import hero3 from '../assets/images/hero/hero3.jpg';
@@ -12,7 +13,7 @@ const Hero = ({  }) => {
   const navigate = useNavigate();
   //
   const images = [
-    hero1,
+    hero0,
     hero2,
     hero3,
   ];
