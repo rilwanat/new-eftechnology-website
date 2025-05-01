@@ -39,9 +39,9 @@ export default function MenuBar({
     { label: 'COMPANY', dropdown: [
       { label: 'About Us', href: '/about-us' },
       { label: 'Our Team', href: '/our-team' },
-      { label: 'Why Choose Us', href: '/why-choose-us' },
-      { label: 'Careers', href: '/careers' },
-      { label: 'FAQ', href: '/faq' },
+      // { label: 'Why Choose Us', href: '/why-choose-us' },
+      // { label: 'Careers', href: '/careers' },
+      // { label: 'FAQ', href: '/faq' },
     ] },
     { label: 'PRODUCTS', dropdown: [
       { label: 'Security Products/Services', href: '/security-products' },
@@ -49,7 +49,7 @@ export default function MenuBar({
       { label: 'Communication Gadgets', href: '/communication-gadgets' },
       { label: 'E-Commerce', href: '/e-commerce' },
       // { label: 'Cloud Services', href: '/cloud-services' },
-      // { label: 'EFPhonetaxi', href: '/ef-phone' },
+      { label: 'PriceCheck24', href: '/#' },
       { label: 'Alert Services', href: '/alert-services' },
       { label: 'Tracker System And Devices', href: '/tracker-systems' },
     ] },
@@ -58,8 +58,8 @@ export default function MenuBar({
     { label: 'SUBSIDIARIES', dropdown: [
       { label: 'EFGold', href: 'https://efgold.net/' },
       { label: 'EFEnergy', href: '/ef-energy' },
-      { label: 'EFWaste Management', href: '/ef-waste-management' },
-      { label: 'EFSkyview', href: '/ef-skyview' },
+      { label: 'EFWaste Management', href: 'https://efwaste.com/' },
+      { label: 'EFSkyview', href: 'https://efskyview.com/' },
       // { label: 'EFWireless', href: '/ef-wireless' },
     ] },
     { label: 'CONTACT', href: '/contact' },
@@ -137,6 +137,7 @@ onMouseLeave={(e) => handleMouseLeave(e)}
             className="text-sm text-black cursor-pointer"
             style={{ fontWeight: '600', cursor: 'pointer' }}
             href={item.href}
+            target={`${ item.label !== 'EF GOLD' ? '' : '_blank'}`}
           >
             {item.label}
           </a>
@@ -174,6 +175,7 @@ onMouseLeave={(e) => handleMouseLeave(e)}
                     key={subIndex}
                     href={subItem.href}
                     className="block p-2 hover:bg-theme hover:text-white rounded-sm cursor-pointer" 
+                    target={`${ item.label !== 'SUBSIDIARIES' ? '' : '_blank'}`}
                   >
                     {subItem.label}
                   </a>

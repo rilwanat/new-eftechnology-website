@@ -82,14 +82,13 @@ function Footer({
           
           {/* <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div> */}
 
-          <div className="flex items-center cursor-pointer mb-2"><KeyboardArrowRightIcon className='mr-2' style={{ width: '16px', height: '16px', }}/> <p className='text-theme ' style={{ color: '', fontSize: '14px' }}>Security Products/Services</p></div>
-          <div className="flex items-center cursor-pointer mb-2"><KeyboardArrowRightIcon className='mr-2' style={{ width: '16px', height: '16px', }}/> <p className='text-theme ' style={{ color: '', fontSize: '14px' }}>EFBroadband</p></div>
-          <div className="flex items-center cursor-pointer mb-2"><KeyboardArrowRightIcon className='mr-2' style={{ width: '16px', height: '16px', }}/> <p className='text-theme ' style={{ color: '', fontSize: '14px' }}>Communication Gadgets</p></div>
-          <div className="flex items-center cursor-pointer mb-2"><KeyboardArrowRightIcon className='mr-2' style={{ width: '16px', height: '16px', }}/> <p className='text-theme ' style={{ color: '', fontSize: '14px' }}>E-Commerce</p></div>
-          <div className="flex items-center cursor-pointer mb-2"><KeyboardArrowRightIcon className='mr-2' style={{ width: '16px', height: '16px', }}/> <p className='text-theme ' style={{ color: '', fontSize: '14px' }}>Cloud Services</p></div>
-          <div className="flex items-center cursor-pointer mb-2"><KeyboardArrowRightIcon className='mr-2' style={{ width: '16px', height: '16px', }}/> <p className='text-theme ' style={{ color: '', fontSize: '14px' }}>EFPhonetaxi</p></div>
-          <div className="flex items-center cursor-pointer mb-2"><KeyboardArrowRightIcon className='mr-2' style={{ width: '16px', height: '16px', }}/> <p className='text-theme ' style={{ color: '', fontSize: '14px' }}>Alert Services</p></div>
-          <div className="flex items-center cursor-pointer mb-2"><KeyboardArrowRightIcon className='mr-2' style={{ width: '16px', height: '16px', }}/> <p className='text-theme ' style={{ color: '', fontSize: '14px' }}>Tracker System and Devices</p></div>
+          <div className="flex items-center cursor-pointer mb-2"><KeyboardArrowRightIcon className='mr-2' style={{ width: '16px', height: '16px', }}/> <p className='text-theme ' style={{ color: '', fontSize: '14px' }}><a href='/security-products'>Security Products/Services</a></p></div>
+          <div className="flex items-center cursor-pointer mb-2"><KeyboardArrowRightIcon className='mr-2' style={{ width: '16px', height: '16px', }}/> <p className='text-theme ' style={{ color: '', fontSize: '14px' }}><a href='/ef-broadband'>EFBroadband</a></p></div>
+          <div className="flex items-center cursor-pointer mb-2"><KeyboardArrowRightIcon className='mr-2' style={{ width: '16px', height: '16px', }}/> <p className='text-theme ' style={{ color: '', fontSize: '14px' }}><a href='/communication-gadgets'>Communication Gadgets</a></p></div>
+          <div className="flex items-center cursor-pointer mb-2"><KeyboardArrowRightIcon className='mr-2' style={{ width: '16px', height: '16px', }}/> <p className='text-theme ' style={{ color: '', fontSize: '14px' }}><a href='/e-commerce'>E-Commerce</a></p></div>
+          <div className="flex items-center cursor-pointer mb-2"><KeyboardArrowRightIcon className='mr-2' style={{ width: '16px', height: '16px', }}/> <p className='text-theme ' style={{ color: '', fontSize: '14px' }}><a>PriceCheck24</a></p></div>
+          <div className="flex items-center cursor-pointer mb-2"><KeyboardArrowRightIcon className='mr-2' style={{ width: '16px', height: '16px', }}/> <p className='text-theme ' style={{ color: '', fontSize: '14px' }}><a href='/alert-services'>Alert Services</a></p></div>
+          <div className="flex items-center cursor-pointer mb-2"><KeyboardArrowRightIcon className='mr-2' style={{ width: '16px', height: '16px', }}/> <p className='text-theme ' style={{ color: '', fontSize: '14px' }}><a href='/tracker-systems'>Tracker System and Devices</a></p></div>
           </div>
  
           {/* <div className="flex flex-col md:items-start md:w-1/3 my-4 md:h-40">
@@ -114,11 +113,11 @@ function Footer({
 
             <div className='flex md:flex-row flex-col'>
               <div className='flex'>
-                <a className="text-sm  mr-2 cursor-pointer hover:text-scGreen">Terms and Conditions</a>
+                <a className="text-sm  mr-2 cursor-pointer hover:text-scGreen" href="/terms-and-conditions">Terms and Conditions</a>
                 <a className="text-sm  mr-2">|</a>
               </div>
               <div className='flex'>
-                <a className="text-sm  mr-2 cursor-pointer hover:text-scGreen">Privacy</a>
+                <a className="text-sm  mr-2 cursor-pointer hover:text-scGreen" href="/privacy-policy">Privacy Policy</a>
               </div>
             </div>
             

@@ -28,6 +28,7 @@ import PersonIcon from '@mui/icons-material/Person';
 import stars from '../assets/images/stars.png';
 
 import Hero from './Hero';
+import background from '../assets/images/background.png';
 
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
@@ -83,7 +84,41 @@ export default function ProductPageSecurity({
             {/* <ChairmansMessage />  */}
             {/* <AboutUs /> */}
             {/* <WorkProcess /> */}
+            <div className="flex sm:flex-row flex-col px-8 md:px-4 lg:px-16 xl:px-24 2xl:px-80 py-2 mb-12"
+        
+        style={{
+          backgroundImage: `url(${background})`, 
+          backgroundAttachment: 'fixed',
+          backgroundSize: 'contain',
+          backgroundPosition: 'center',
+        }}
+        
+        >
+  <div className='w-full sm:w-7/10 flex flex-col  justify-center mt-12 mb-2'>
+    <p className=' mb-2' style={{ color: '', fontWeight: '600', fontSize: '24px' }}>Security Products/Services</p>
+    <div className='bg-theme mb-2' style={{ width: '80px', height: '4px' }}></div>
+    <div className=" pr-8" style={{ fontSize: '16px', color: '#777777'   }}>
+    Equip your security forces with the most advanced protection solutions through our 
+    premium Security Products and Services. Tailored for national and state-level defense, 
+    our offerings empower civil defense units with cutting-edge tools and technologies for 
+    effective surveillance, response, and public safety. Trust E.F Network to deliver 
+    unmatched reliability and innovation—because securing lives and infrastructure is 
+    more than a service; it’s our mission.
+    </div>
+  </div>
 
+  <div className="w-full sm:w-3/10 flex flex-col  mt-12 mb-2 border border-theme p-8 bg-gray-100">
+  <p className=' mb-2' style={{ color: '', fontWeight: '600', fontSize: '18px' }}>OTHER SERVICES</p>
+    <div className='bg-theme mb-2' style={{ width: '80px', height: '2px' }}></div>
+    <div className=" mt-1" style={{ fontSize: '16px', color: '#777777'   }}><a href='/tracker-systems'>Tracker Systems and Devices</a></div>
+    <div className=" mt-1" style={{ fontSize: '16px', color: '#777777'   }}><a href='/alert-services'>Alert Services</a></div>
+    <div className=" mt-1" style={{ fontSize: '16px', color: '#777777'   }}><a href='/communication-gadgets'>Communication Gadgets</a></div>
+    <div className=" mt-1" style={{ fontSize: '16px', color: '#777777'   }}><a href='/e-commerce'>E-Commerce</a></div>
+    <div className=" mt-1" style={{ fontSize: '16px', color: '#777777'   }}><a href='/ef-broadband'>EF Broadcast</a></div>
+    <div className=" mt-1" style={{ fontSize: '16px', color: '#777777'   }}><a href='/#'>PriceCheck24</a></div>
+  </div>
+
+</div>
 
           </div>
         </div>      

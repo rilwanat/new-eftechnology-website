@@ -86,6 +86,8 @@ export default function EFEnergyPage({
 
 
 
+    const [isMessageSending, setIsMessageSending ] = useState(false);
+
     const [companyName, setCompanyName] = useState('');
     const [address, setAddress] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('');
@@ -188,6 +190,8 @@ const handleSendMessage = async () => {
       formData.append('file', file);
   }
 
+
+  setIsMessageSending(true);
   try {
       const response = await fetch('https://eftechnology.net/new-eftechnology-php/send-mail.php', {
           method: 'POST',
@@ -195,9 +199,11 @@ const handleSendMessage = async () => {
       });
 
       const result = await response.json();
-
+      setIsMessageSending(false);
       if (result.success) {
         
+        
+
           // Reset form
           setCompanyName('');
           setAddress('');
@@ -217,6 +223,7 @@ const handleSendMessage = async () => {
           setIsNotificationModalOpen(true);
       }
   } catch (error) {
+    setIsMessageSending(false);
       console.error("Error sending message:", error);
       // alert("An error occurred while sending the message");
       openNotificationModal(false, "EF Energy", "An error occurred while sending the message");

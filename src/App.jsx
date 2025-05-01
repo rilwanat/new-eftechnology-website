@@ -17,6 +17,9 @@ import EFGoldPage from './components/EFGoldPage.jsx';
 import EFEnergyPage from './components/EFEnergyPage.jsx';
 
 import ContactPage from './components/ContactPage.jsx';
+import TermsAndConditionsPage from './components/TermsAndConditionsPage.jsx';
+import PrivacyPolicyPage from './components/PrivacyPolicyPage.jsx';
+ 
 
 import ProductsPage from './components/ProductsPage.jsx';
 import ProductPageAlert from './components/ProductPageAlert.jsx';
@@ -73,8 +76,10 @@ function App() {
 
             <Route path='/ef-gold' element={<EFGoldPage isMobile={isMobile} isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} closeMenu={closeMenu} />}/>
             <Route path='/ef-energy' element={<EFEnergyPage isMobile={isMobile} isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} closeMenu={closeMenu} />}/>
-
+            
             <Route path='/contact' element={<ContactPage isMobile={isMobile} isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} closeMenu={closeMenu} />}/>
+            <Route path='/terms-and-conditions' element={<TermsAndConditionsPage isMobile={isMobile} isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} closeMenu={closeMenu} />}/>
+            <Route path='/privacy-policy' element={<PrivacyPolicyPage isMobile={isMobile} isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} closeMenu={closeMenu} />}/>
 
             <Route path='/products' element={<ProductsPage isMobile={isMobile} isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} closeMenu={closeMenu} />}/>
             <Route path='/alert-services' element={<ProductPageAlert isMobile={isMobile} isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} closeMenu={closeMenu} />}/>
