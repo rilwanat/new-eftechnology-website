@@ -148,7 +148,7 @@ export default function OurTeamPage({
         </div>
 
         <div className=' flex flex-col md:flex-row items-center justify-between mt-4 '>
-          <div className='flex flex-col w-full md:w-1/3 justify-center items-center rounded-md shadow-md m-2 p-4 bg-white min-h-[200px]'>
+          {/* <div className='flex flex-col w-full md:w-1/3 justify-center items-center rounded-md shadow-md m-2 p-4 bg-white min-h-[200px]'>
           <img
                           className="block h-60 w-60 mb-2 mt-4"
                           src={gideon2}
@@ -164,7 +164,7 @@ export default function OurTeamPage({
             We use technology to improve the normal conventional systems. 
             </div>
             
-          </div>
+          </div> */}
           <div className='flex flex-col w-full md:w-1/3 justify-center items-center rounded-md shadow-md m-2 p-4 bg-white min-h-[200px]'>
           <img
                           className="block h-60 w-60 mb-2 mt-4"
