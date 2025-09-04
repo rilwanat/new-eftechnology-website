@@ -44,7 +44,7 @@ function OurValues({ }) {
         <div className=' flex flex-col md:flex-row items-center justify-between mt-4  mb-20'>
           <div className='flex flex-col w-full md:w-1/4 justify-center items-center rounded-md shadow-md m-2 p-4 bg-white min-h-[200px]'>
           
-          {/* <LocationSearchingIcon className="mb-2" style={{ width: '40px', height: '40px', color: '#CBD67A' }}/> */}
+          {/* <LocationSearchingIcon className="mb-2" style={{ width: '40px', height: '40px', color: '#EBEA1C' }}/> */}
             
             <div className="px-8 text-left py-4">
             <div className="mb-4" style={{ fontWeight: '600', fontSize: '16px' }}>Our Goal</div>
@@ -54,12 +54,12 @@ function OurValues({ }) {
             </div>
             
             </div>
-            {/* <div className="mt-4 cursor-pointer" style={{ fontWeight: '600', color: '#CBD67A' }}>Read More</div> */}
+            {/* <div className="mt-4 cursor-pointer" style={{ fontWeight: '600', color: '#EBEA1C' }}>Read More</div> */}
           </div>
           <div className='flex flex-col w-full md:w-1/4 justify-center items-center rounded-md shadow-md m-2 p-4 bg-white min-h-[200px]'>
           
             
-            {/* <CampaignIcon className="mb-2" style={{ width: '40px', height: '40px', color: '#CBD67A' }}/> */}
+            {/* <CampaignIcon className="mb-2" style={{ width: '40px', height: '40px', color: '#EBEA1C' }}/> */}
             <div className="px-8 text-left py-4">
             <div className="mb-4" style={{ fontWeight: '600', fontSize: '16px' }}>Standard</div>
             <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
@@ -68,12 +68,12 @@ function OurValues({ }) {
             </div>
             
             </div>
-            {/* <div className="mt-4 cursor-pointer" style={{ fontWeight: '600', color: '#CBD67A' }}>Read More</div> */}
+            {/* <div className="mt-4 cursor-pointer" style={{ fontWeight: '600', color: '#EBEA1C' }}>Read More</div> */}
           </div>
           <div className='flex flex-col w-full md:w-1/4 justify-center items-center rounded-md shadow-md m-2 p-4 bg-white min-h-[200px]'>
           
             
-            {/* <CampaignIcon className="mb-2" style={{ width: '40px', height: '40px', color: '#CBD67A' }}/> */}
+            {/* <CampaignIcon className="mb-2" style={{ width: '40px', height: '40px', color: '#EBEA1C' }}/> */}
             <div className="px-8 text-left py-4">
             <div className="mb-4" style={{ fontWeight: '600', fontSize: '16px' }}>Support</div>
             <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
@@ -82,12 +82,12 @@ function OurValues({ }) {
             </div>
             
             </div>
-            {/* <div className="mt-4 cursor-pointer" style={{ fontWeight: '600', color: '#CBD67A' }}>Read More</div> */}
+            {/* <div className="mt-4 cursor-pointer" style={{ fontWeight: '600', color: '#EBEA1C' }}>Read More</div> */}
           </div>
           <div className='flex flex-col w-full md:w-1/4 justify-center items-center rounded-md shadow-md m-2 p-4 bg-white min-h-[200px]'>
           
             
-            {/* <CampaignIcon className="mb-2" style={{ width: '40px', height: '40px', color: '#CBD67A' }}/> */}
+            {/* <CampaignIcon className="mb-2" style={{ width: '40px', height: '40px', color: '#EBEA1C' }}/> */}
             <div className="px-8 text-left py-4">
             <div className="mb-4" style={{ fontWeight: '600', fontSize: '16px' }}>Quality</div>
             <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
@@ -96,7 +96,7 @@ function OurValues({ }) {
             </div>
             
             </div>
-            {/* <div className="mt-4 cursor-pointer" style={{ fontWeight: '600', color: '#CBD67A' }}>Read More</div> */}
+            {/* <div className="mt-4 cursor-pointer" style={{ fontWeight: '600', color: '#EBEA1C' }}>Read More</div> */}
           </div>
 
         </div>

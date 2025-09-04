@@ -273,16 +273,16 @@ const handleSendMessage = async () => {
         <div className='flex w-full h-full md:w-1/3 ' >
           <div className='flex flex-col p-4'>
             <div className='text-lg' style={{ fontWeight: '600', cursor: 'pointer' }}>Office Location</div>
-            <hr className='my-2' style={{ color: '#CBD67A'  }}/>
+            <hr className='my-2' style={{ color: '#EBEA1C'  }}/>
             <div className='flex mr-4'>
-              <div className='mr-1'><PlaceIcon style={{ color: '#CBD67A'  }}/></div>
+              <div className='mr-1'><PlaceIcon style={{ color: '#EBEA1C'  }}/></div>
               <div className='' style={{fontSize: '16px', color: '#777777'  }}>No. 31, Pope John Paul Street, Maitama, F.C.T Abuja, Nigeria.</div>
             </div>
 
             <div className='text-lg mt-4' style={{ fontWeight: '600', cursor: 'pointer' }}>Office Hours</div>
-            <hr className='my-2' style={{ color: '#CBD67A'  }}/>
+            <hr className='my-2' style={{ color: '#EBEA1C'  }}/>
             <div className='flex mr-4'>
-              <div className='mr-1'><AccessTimeIcon style={{ color: '#CBD67A'  }} /></div>
+              <div className='mr-1'><AccessTimeIcon style={{ color: '#EBEA1C'  }} /></div>
               <div className='flex flex-col '>
               <div className='' style={{fontSize: '16px', color: '#777777'  }}>9:00 AM - 5:00 PM</div>
               <div className='' style={{fontSize: '16px', color: '#777777'  }}>Monday - Friday</div>
@@ -290,17 +290,21 @@ const handleSendMessage = async () => {
           </div>
 
           <div className='text-lg mt-4' style={{ fontWeight: '600', cursor: 'pointer' }}>Phone</div>
-            <hr className='my-2' style={{ color: '#CBD67A'  }}/>
-            <div className='flex mr-4'>
-              <div className='mr-1'><CallIcon style={{ color: '#CBD67A'  }} /></div>
-              <div className='' style={{fontSize: '16px', color: '#777777'  }}>+234 809 111 3333</div>
+            <hr className='my-2' style={{ color: '#EBEA1C'  }}/>
+            <div className='flex mr-4 cursor-pointer'
+            onClick={() => {window.location.href = "tel:+2348091113333";}}
+            >
+              <div className='mr-1'><CallIcon style={{ color: '#EBEA1C'  }} /></div>
+              <div className='hover:text-black text-lightGray' style={{fontSize: '16px' }}>+234 809 111 3333</div>
           </div>
 
           <div className='text-lg mt-4' style={{ fontWeight: '600', cursor: 'pointer' }}>Email</div>
-            <hr className='my-2' style={{ color: '#CBD67A'  }}/>
-            <div className='flex mr-4'>
-              <div className='mr-1'><EmailIcon style={{ color: '#CBD67A'  }} /></div>
-              <div className='' style={{fontSize: '16px', color: '#777777'  }}>info@eftechnology.net</div>
+            <hr className='my-2' style={{ color: '#EBEA1C'  }}/>
+            <div className='flex mr-4 cursor-pointer'
+            onClick={() => {window.location.href = "mailto:info@eftechnology.net";}}
+            >
+              <div className='mr-1'><EmailIcon style={{ color: '#EBEA1C'  }} /></div>
+              <div className='hover:text-black text-lightGray' style={{fontSize: '16px' }}>info@eftechnology.net</div>
           </div>
 
           </div>
@@ -366,8 +370,8 @@ const handleSendMessage = async () => {
 
             <div 
               onClick={() => { handleSendMessage() }}
-              style={{ borderWidth: '0px', backgroundColor: '#CBD67A', color: '#424218', width: '200px' }}
-              className='mt-4 text-center  rounded-sm px-4 py-2  text-sm cursor-pointer'>
+              style={{ borderWidth: '0px',  width: '200px' }}
+              className='mt-4 text-center  rounded-sm px-4 py-2  text-sm cursor-pointer bg-theme hover:bg-black hover:text-darkGray'>
               {isMessageSending ? 'Please wait ...' : 'Send Message'}
             </div>
 
@@ -396,7 +400,7 @@ const handleSendMessage = async () => {
             />
             <div 
               // onClick={() => { handleSubscribeToNewsletter() }}
-              style={{ borderWidth: '0px', backgroundColor: '#CBD67A' }}
+              style={{ borderWidth: '0px', backgroundColor: '#EBEA1C' }}
               className='text-center mt-4 sm:mt-0 sm:ml-2  rounded-sm px-4 py-2  text-sm cursor-pointer'>
               Subscribe
             </div>

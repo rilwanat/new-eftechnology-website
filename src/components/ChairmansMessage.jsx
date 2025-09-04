@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import VpnLockIcon from '@mui/icons-material/VpnLock';
 import SupportAgentIcon from '@mui/icons-material/SupportAgent';
 
+import md2 from '../assets/images/md2.jpg';
+
 
 function ChairmansMessage({ }) {
 
@@ -18,17 +20,29 @@ function ChairmansMessage({ }) {
           
           
 
-        <div className=' flex flex-col md:flex-row items-center justify-between mt-2'>
+        <div className=' flex flex-col md:flex-row items-start justify-between mt-2'>
           <div className='flex flex-col w-full md:w-1/2 justify-center  mx-2 p-4'>
             <div className="mb-4" style={{ fontWeight: '600', fontSize: '16px' }}>The Chairman's Message</div>
             <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
             <div className="  " style={{fontSize: '16px', color: '#777777'  }}>
             In the 20th century the world focused on industrialization and analogue, in 21st century it was oil drilling and digital technology, and the future of mankind as we see it, lies with Clean, Green and wireless products/technologies. As a result, through our research and development, EF Group would continuously endeavor to introduce new technologies, acquire companies, develop and implement these products for the benefits of Africa continent. We invite you to join us in our global quest to making the world a better place- a Clean, Green and wireless world.
             </div>
-            <div className="mt-4 ml-4 font-bold" style={{ color: '#CBD67A' }}>- Mr. GIDEON EGBUCHULAM</div>
-            <div className="mt-1 ml-4" style={{ fontWeight: '600' }}>EF Group Chairman/Chief Executive Officer</div>
+            
+            
+<div  className="flex w-full items-start justify-center px-2 mt-4">
+  <div className="flex flex-col items-start">
+<div className=" px-4 py-2 bg-darkTheme rounded-lg   font-bold" style={{ color: '#EBEA1C' }}>- Mr. GIDEON EGBUCHULAM</div>
+            <div className="mt-1 ml-4" style={{ fontWeight: '600' }}>EF Group Chairman<br/>Chief Executive Officer</div>
+  </div>
+<img 
+src={md2} 
+// alt={`Slide ${index + 1}`} 
+className='ml-8 rounded-lg border-2'
+style={{ width: '50%', height: 'auto', objectFit: 'contain', userSelect: 'none', pointerEvents: 'none' }}
+/>
+</div>
           </div>
-          <div className='flex flex-col w-full md:w-1/2 justify-center  mx-2 p-4'>
+          <div className='flex flex-col w-full md:w-1/2 justify-center  mx-2 p-4 mt-4md:mt-0'>
             <div className="flex ">
               <div className="mr-4"><VpnLockIcon style={{ width: '50px', height: '50px', color: '#000000' }} /></div>
               <div className="flex flex-col">

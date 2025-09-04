@@ -45,7 +45,7 @@ function OurProducts({ }) {
 
         <div className=' flex flex-col md:flex-row items-center justify-between mt-4 '>
           <div className='flex flex-col w-full md:w-1/2 justify-center items-center rounded-md shadow-md m-2 p-8 bg-white min-h-[200px]'>
-          <LocationSearchingIcon className="mb-4" style={{ width: '40px', height: '40px', color: '#CBD67A' }}/>
+          <LocationSearchingIcon className="mb-4" style={{ width: '40px', height: '40px', color: '#EBEA1C' }}/>
             <div className="mb-2" style={{ fontWeight: '600', fontSize: '16px' }}>Tracker Systems and Devices</div>
             <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
             <div className="px-8 text-center" style={{ fontSize: '16px', color: '#777777'   }}>
@@ -54,7 +54,7 @@ function OurProducts({ }) {
             <a href='/tracker-systems' className="mt-4 cursor-pointer text-darkTheme hover:text-theme" style={{ fontWeight: '600', fontSize: '16px' }}>Read More</a>
           </div>
           <div className='flex flex-col w-full md:w-1/2 justify-center items-center rounded-md shadow-md m-2 p-8 bg-white min-h-[200px]'>
-          <CampaignIcon className="mb-4" style={{ width: '40px', height: '40px', color: '#CBD67A' }}/>
+          <CampaignIcon className="mb-4" style={{ width: '40px', height: '40px', color: '#EBEA1C' }}/>
             <div className="mb-2" style={{ fontWeight: '600', fontSize: '16px' }}>Alert Services</div>
             <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
             <div className="px-8 text-center" style={{ fontSize: '16px', color: '#777777'   }}>
@@ -68,7 +68,7 @@ function OurProducts({ }) {
 
         <div className=' flex flex-col md:flex-row items-center justify-between'>
           <div className='flex flex-col w-full md:w-1/2 justify-center items-center rounded-md shadow-md m-2 p-8 bg-white min-h-[200px]'>
-          <SpeakerPhoneIcon className="mb-4" style={{ width: '40px', height: '40px', color: '#CBD67A' }}/>
+          <SpeakerPhoneIcon className="mb-4" style={{ width: '40px', height: '40px', color: '#EBEA1C' }}/>
             <div className="mb-2" style={{ fontWeight: '600', fontSize: '16px' }}>Communication Gadgets</div>
             <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
             <div className="px-8 text-center" style={{ fontSize: '16px', color: '#777777'   }}>
@@ -77,7 +77,7 @@ function OurProducts({ }) {
             <a href='/communication-gadgets' className="mt-4 cursor-pointer text-darkTheme hover:text-theme" style={{ fontWeight: '600', fontSize: '16px' }}>Read More</a>
           </div>
           <div className='flex flex-col w-full md:w-1/2 justify-center items-center rounded-md shadow-md m-2 p-8 bg-white min-h-[200px]'>
-          <ShoppingCartIcon className="mb-4" style={{ width: '40px', height: '40px', color: '#CBD67A' }}/>
+          <ShoppingCartIcon className="mb-4" style={{ width: '40px', height: '40px', color: '#EBEA1C' }}/>
             <div className="mb-2" style={{ fontWeight: '600', fontSize: '16px' }}>E-Commerce</div>
             <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
             <div className="px-8 text-center" style={{ fontSize: '16px', color: '#777777'   }}>
@@ -91,7 +91,7 @@ function OurProducts({ }) {
 
         <div className=' flex flex-col md:flex-row items-center justify-between '>
           <div className='flex flex-col w-full md:w-1/2 justify-center items-center rounded-md shadow-md m-2 p-8 bg-white min-h-[200px]'>
-          <NetworkWifiIcon className="mb-4" style={{ width: '40px', height: '40px', color: '#CBD67A' }}/>
+          <NetworkWifiIcon className="mb-4" style={{ width: '40px', height: '40px', color: '#EBEA1C' }}/>
             <div className="mb-2" style={{ fontWeight: '600', fontSize: '16px' }}>EFBroadband</div>
             <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
             <div className="px-8 text-center" style={{ fontSize: '16px', color: '#777777'   }}>
@@ -100,7 +100,7 @@ function OurProducts({ }) {
             <a href='/ef-broadband' className="mt-4 cursor-pointer text-darkTheme hover:text-theme" style={{ fontWeight: '600', fontSize: '16px' }}>Read More</a>
           </div>
           <div className='flex flex-col w-full md:w-1/2 justify-center items-center rounded-md shadow-md m-2 p-8 bg-white min-h-[200px]'>
-          <SecurityIcon className="mb-4" style={{ width: '40px', height: '40px', color: '#CBD67A' }}/>
+          <SecurityIcon className="mb-4" style={{ width: '40px', height: '40px', color: '#EBEA1C' }}/>
             <div className="mb-2" style={{ fontWeight: '600', fontSize: '16px' }}>Security Products/Services</div>
             <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
             <div className="px-8 text-center" style={{ fontSize: '16px', color: '#777777'  }}>

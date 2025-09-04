@@ -402,7 +402,7 @@ const handleSendMessage = async () => {
 
           <div 
               onClick={() => { handleSendMessage() }}
-              style={{ borderWidth: '0px', backgroundColor: '#CBD67A', width: '200px', color: '#424218' }}
+              style={{ borderWidth: '0px', backgroundColor: '#EBEA1C', width: '200px', color: '#424218' }}
               className='mt-4  text-center rounded-sm px-4 py-2  text-sm cursor-pointer mb-20'>
               {isMessageSending ? 'Please wait..' : 'Send Message'}  
             </div>

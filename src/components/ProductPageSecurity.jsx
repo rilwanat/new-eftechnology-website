@@ -107,8 +107,8 @@ export default function ProductPageSecurity({
     </div>
   </div>
 
-  <div className="w-full sm:w-3/10 flex flex-col  mt-12 mb-2 border border-theme p-8 bg-gray-100">
-  <p className=' mb-2' style={{ color: '', fontWeight: '600', fontSize: '18px' }}>OTHER SERVICES</p>
+  <div className="w-full sm:w-3/10 flex flex-col  mt-12 mb-2 border border-darkGray rounded-lg p-8 bg-gray-100 shadow-lg">
+  <p className=' mb-2' style={{ color: '', fontWeight: '600', fontSize: '18px' }}>OUR OTHER SERVICES</p>
     <div className='bg-theme mb-2' style={{ width: '80px', height: '2px' }}></div>
     <div className=" mt-1" style={{ fontSize: '16px', color: '#777777'   }}><a href='/tracker-systems'>Tracker Systems and Devices</a></div>
     <div className=" mt-1" style={{ fontSize: '16px', color: '#777777'   }}><a href='/alert-services'>Alert Services</a></div>

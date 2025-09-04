@@ -91,7 +91,7 @@ const HeroGold = ({  }) => {
 
         {/* <motion.h1
           className="text-4xl md:text-6xl font-bold mb-4  md:w-1/2 md:min-h-[200px]" 
-          style={{ color: '#CBD67A' }}
+          style={{ color: '#EBEA1C' }}
           variants={textVariants}
           initial="initial"
           animate="animate"
@@ -110,7 +110,7 @@ const HeroGold = ({  }) => {
             </div>
             <div 
               onClick={() => { navigateTo('/about-us'); }}
-              style={{  width: '200px', background: '#CBD67A', fontWeight: '600',  }}
+              style={{  width: '200px', background: '#EBEA1C', fontWeight: '600',  }}
               className='text-center mt-2 border-white rounded-sm py-3  text-sm cursor-pointer '>
               About Us
             </div>

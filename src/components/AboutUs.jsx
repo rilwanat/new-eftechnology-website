@@ -34,9 +34,8 @@ function AboutUs({ }) {
             EF Network Ltd is a multinational technology company, founded in 1995 that is a major global player in the green products, wireless/virtual technologies, broadband, cyber-security, tracking systems-personal, home, auto and public safety, communication gadgets, cloud services and e-commerce.
             </div>
           </div>
-          <div className='flex flex-col w-full md:w-1/2 justify-center  mx-2 p-4'>
-            
-            <img className="w-full h-full object-scale-down" src={skyview} alt="" />
+          <div className='flex flex-col w-full md:w-1/2 justify-center  mx-2 p-4 '>
+            <img className="w-full h-full object-scale-down border-2 rounded-lg " src={skyview} alt="" />
           </div>
 
         </div>

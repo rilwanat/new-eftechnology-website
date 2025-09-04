@@ -29,7 +29,7 @@ function HeaderParallax({ imageUrl, title, subtitle  }) {
         <p className="text-lg z-1000">{subtitle}</p>
         {/* <div 
               // onClick={() => { handleSubscribeToNewsletter() }}
-              style={{ borderWidth: '0px', backgroundColor: '#CBD67A', color: '#424218', width: '200px' }}
+              style={{ borderWidth: '0px', backgroundColor: '#EBEA1C', color: '#424218', width: '200px' }}
               className='mt-4 text-center  rounded-sm px-4 py-2  text-sm cursor-pointer'>
               Send Message
             </div> */}

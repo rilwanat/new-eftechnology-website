@@ -33,7 +33,7 @@ function Footer({
     
       <div className='flex flex-col  h-auto px-4 lg:px-16 xl:px-24 2xl:px-80 py-4 pb-8 '  style={{ backgroundColor: '#1D2024' }}>
         <div className="flex flex-col items-start md:flex-row md:items-center md:justify-between ">
-          <div className="flex flex-col md:items-start md:w-1/3 my-4 md:h-40">
+          <div className="flex flex-col md:items-start md:w-1/3 my-4 ">
             <div className="flex items-center mb-2 ">
               <img
                 className="block h-10 w-auto max-w-none"
@@ -43,35 +43,35 @@ function Footer({
                 style={{ cursor: 'pointer' }}
               />
             </div>
-            <p className=' mb-2' style={{ color: '#eeeeee', fontSize: '20px' }}>ABOUT</p>
+            <p className=' mb-2' style={{ color: '#eeeeee', fontSize: '20px' }}>ABOUT US</p>
             <p className='' style={{ color: '#eeeeee', fontSize: '14px' }}>EF Network Ltd is a multinational technology company founded in 1995, specializing in green technology, wireless solutions, broadband, cybersecurity, and tracking systems for personal, home, automotive, and public safety. We also excel in communication gadgets, cloud services, and e-commerce, delivering innovative, secure, and sustainable solutions globally.</p>
             <div className='flex mt-4' style={{ color: '#eeeeee' }}>
               <a href='https://www.facebook.com/efnetworkltd' target='_blank'>
               <FacebookIcon 
-                className='mr-4 cursor-pointer'
+                className='mr-4 cursor-pointer hover:text-white text-theme'
                 alt="" 
-                style={{ width: '20px', height: '20px', objectFit: 'cover', color: '#CBD67A' }}
+                style={{ width: '20px', height: '20px', objectFit: 'cover'}}
               />
               </a>
               
               <a href='https://x.com/efnetworkltd' target='_blank'>
               <XIcon   
-                className='mr-4 cursor-pointer'
+                className='mr-4 cursor-pointer hover:text-white text-theme'
                 alt="" 
-                style={{ width: '20px', height: '20px', objectFit: 'cover', color: '#CBD67A' }}
+                style={{ width: '20px', height: '20px', objectFit: 'cover' }}
               /></a>
               
               <a href='https://www.linkedin.com/company/ef-networks-ltd/posts/?feedView=all' target='_blank'>
               <LinkedInIcon 
-                className='mr-4 cursor-pointer'
+                className='mr-4 cursor-pointer hover:text-white text-theme'
                 alt="" 
-                style={{ width: '20px', height: '20px', objectFit: 'cover', color: '#CBD67A' }}
+                style={{ width: '20px', height: '20px', objectFit: 'cover' }}
               /></a>
               
               <a href='https://www.instagram.com/efnetworkltd/' target='_blank'>
               <InstagramIcon 
-                className='mr-4 cursor-pointer'                
-                style={{ width: '20px', height: '20px', objectFit: 'cover', color: '#CBD67A' }}
+                className='mr-4 cursor-pointer hover:text-white text-theme'                
+                style={{ width: '20px', height: '20px', objectFit: 'cover' }}
               /></a>
               
             </div>
@@ -82,13 +82,13 @@ function Footer({
           
           {/* <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div> */}
 
-          <div className="flex items-center cursor-pointer mb-2"><KeyboardArrowRightIcon className='mr-2' style={{ width: '16px', height: '16px', }}/> <p className='text-theme ' style={{ color: '', fontSize: '14px' }}><a href='/security-products'>Security Products/Services</a></p></div>
-          <div className="flex items-center cursor-pointer mb-2"><KeyboardArrowRightIcon className='mr-2' style={{ width: '16px', height: '16px', }}/> <p className='text-theme ' style={{ color: '', fontSize: '14px' }}><a href='/ef-broadband'>EFBroadband</a></p></div>
-          <div className="flex items-center cursor-pointer mb-2"><KeyboardArrowRightIcon className='mr-2' style={{ width: '16px', height: '16px', }}/> <p className='text-theme ' style={{ color: '', fontSize: '14px' }}><a href='/communication-gadgets'>Communication Gadgets</a></p></div>
-          <div className="flex items-center cursor-pointer mb-2"><KeyboardArrowRightIcon className='mr-2' style={{ width: '16px', height: '16px', }}/> <p className='text-theme ' style={{ color: '', fontSize: '14px' }}><a href='/e-commerce'>E-Commerce</a></p></div>
-          <div className="flex items-center cursor-pointer mb-2"><KeyboardArrowRightIcon className='mr-2' style={{ width: '16px', height: '16px', }}/> <p className='text-theme ' style={{ color: '', fontSize: '14px' }}><a>PriceCheck24</a></p></div>
-          <div className="flex items-center cursor-pointer mb-2"><KeyboardArrowRightIcon className='mr-2' style={{ width: '16px', height: '16px', }}/> <p className='text-theme ' style={{ color: '', fontSize: '14px' }}><a href='/alert-services'>Alert Services</a></p></div>
-          <div className="flex items-center cursor-pointer mb-2"><KeyboardArrowRightIcon className='mr-2' style={{ width: '16px', height: '16px', }}/> <p className='text-theme ' style={{ color: '', fontSize: '14px' }}><a href='/tracker-systems'>Tracker System and Devices</a></p></div>
+          <div className="flex items-center cursor-pointer mb-2"><KeyboardArrowRightIcon className='mr-2' style={{ width: '16px', height: '16px', }}/> <p className='text-theme hover:text-white' style={{ color: '', fontSize: '14px' }}><a href='/security-products'>Security Products/Services</a></p></div>
+          <div className="flex items-center cursor-pointer mb-2"><KeyboardArrowRightIcon className='mr-2' style={{ width: '16px', height: '16px', }}/> <p className='text-theme hover:text-white ' style={{ color: '', fontSize: '14px' }}><a href='/ef-broadband'>EFBroadband</a></p></div>
+          <div className="flex items-center cursor-pointer mb-2"><KeyboardArrowRightIcon className='mr-2' style={{ width: '16px', height: '16px', }}/> <p className='text-theme hover:text-white ' style={{ color: '', fontSize: '14px' }}><a href='/communication-gadgets'>Communication Gadgets</a></p></div>
+          <div className="flex items-center cursor-pointer mb-2"><KeyboardArrowRightIcon className='mr-2' style={{ width: '16px', height: '16px', }}/> <p className='text-theme hover:text-white ' style={{ color: '', fontSize: '14px' }}><a href='/e-commerce'>E-Commerce</a></p></div>
+          <div className="flex items-center cursor-pointer mb-2"><KeyboardArrowRightIcon className='mr-2' style={{ width: '16px', height: '16px', }}/> <p className='text-theme hover:text-white ' style={{ color: '', fontSize: '14px' }}><a>PriceCheck24</a></p></div>
+          <div className="flex items-center cursor-pointer mb-2"><KeyboardArrowRightIcon className='mr-2' style={{ width: '16px', height: '16px', }}/> <p className='text-theme hover:text-white ' style={{ color: '', fontSize: '14px' }}><a href='/alert-services'>Alert Services</a></p></div>
+          <div className="flex items-center cursor-pointer mb-2"><KeyboardArrowRightIcon className='mr-2' style={{ width: '16px', height: '16px', }}/> <p className='text-theme hover:text-white ' style={{ color: '', fontSize: '14px' }}><a href='/tracker-systems'>Tracker System and Devices</a></p></div>
           </div>
  
           {/* <div className="flex flex-col md:items-start md:w-1/3 my-4 md:h-40">
@@ -109,7 +109,7 @@ function Footer({
     
         <div className="mt-auto flex ">
           <div className="bottom-0 w-full flex md:flex-row flex-col justify-between pt-2 pb-4 mb-2">
-          <p className="text-sm  md:mt-0 mt-4">Copyright &copy; 2025 <a className='text-theme'>E.F Network Organisation</a></p>
+          <p className="text-sm  md:mt-0 mt-4">Copyright &copy; 2025 <a className='text-theme'>E.F NETWORK ORGANISATION</a></p>
 
             <div className='flex md:flex-row flex-col'>
               <div className='flex'>

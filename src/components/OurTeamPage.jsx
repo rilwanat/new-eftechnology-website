@@ -95,14 +95,14 @@ export default function OurTeamPage({
           <div className='flex flex-col w-full md:w-1/3 justify-center items-center rounded-md shadow-md m-2 p-4 bg-white min-h-[200px]'>
           
           <img
-                          className="block h-60 w-60 mb-2 mt-4"
+                          className="block h-60 w-60 mb-2 mt-4 rounded-lg"
                           src={gideon}
-                          alt="Logo"
+                          alt="Gideon"
                           onClick={() => { navigate('/'); }}
                           style={{ cursor: 'pointer' }}
                         />
           <div className="mb-1" style={{ fontWeight: '600', fontSize: '16px' }}>Gideon Egbuchulam</div>
-          <span className="mb-3" style={{ color: '#cbd67a' }} >{'Chairman/Chief Executive Officer'.toUpperCase()}</span>
+          <span className="mb-3 px-4 py-2 bg-darkTheme rounded-lg" style={{ color: '#EBEA1C' }} >{'Chairman/Chief Executive Officer'.toUpperCase()}</span>
           <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
             
             <div className="px-8 text-center mb-4"  style={{fontSize: '16px', color: '#777777'  }}>
@@ -112,35 +112,35 @@ export default function OurTeamPage({
           </div>
           <div className='flex flex-col w-full md:w-1/3 justify-center items-center rounded-md shadow-md m-2 p-4 bg-white min-h-[200px]'>
           <img
-                          className="block h-60 w-60 mb-2 mt-4"
+                          className="block h-60 w-60 mb-2 mt-4 rounded-lg"
                           src={nix}
-                          alt="Logo"
+                          alt="Nix"
                           onClick={() => { navigate('/'); }}
                           style={{ cursor: 'pointer' }}
                         />
             <div className="mb-1" style={{ fontWeight: '600', fontSize: '16px' }}>John Nix</div>
-            <span  className="mb-3" style={{ color: '#cbd67a' }} >{'Chief Financial Officer (CFO)'.toUpperCase()}</span>
+            <span  className="mb-3 px-4 py-2 bg-darkTheme rounded-lg" style={{ color: '#EBEA1C' }} >{'Chief Financial Officer (CFO)'.toUpperCase()}</span>
             <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
 
             <div className="px-8 text-center mb-4"  style={{fontSize: '16px', color: '#777777'  }}>
-            Mr. Nix is the Chief Financial Officer (CFO) of E.F. Network Ltd.
+            Mr. Nix is the Chief Financial Officer (CFO) of E.F. Network Ltd and the Managing Director of NSCG.
             </div>
             
           </div>
           <div className='flex flex-col w-full md:w-1/3 justify-center items-center rounded-md shadow-md m-2 p-4 bg-white min-h-[200px]'>
           <img
-                          className="block h-60 w-60 mb-2 mt-4"
+                          className="block h-60 w-60 mb-2 mt-4 rounded-lg"
                           src={hardy}
-                          alt="Logo"
+                          alt="Hardy"
                           onClick={() => { navigate('/'); }}
                           style={{ cursor: 'pointer' }}
                         />
             <div className="mb-1" style={{ fontWeight: '600', fontSize: '16px' }}>John Hardy</div>
-            <span className="mb-3"  style={{ color: '#cbd67a' }} >{'Chief Operating Officer (COO)'.toUpperCase()}</span>
+            <span className="mb-3 px-4 py-2 bg-darkTheme rounded-lg"  style={{ color: '#EBEA1C' }} >{'Chief Operating Officer (COO)'.toUpperCase()}</span>
             <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
 
             <div className="px-8 text-center mb-4"  style={{fontSize: '16px', color: '#777777'  }}>
-            Business leader with unique blend of engineering & sales.
+            Business leader with unique blend of engineerin, sales, operations and entrepreneurial experience.
             </div>
             
           </div>
@@ -157,7 +157,7 @@ export default function OurTeamPage({
                           style={{ cursor: 'pointer' }}
                         />
           <div className="mb-1" style={{ fontWeight: '600', fontSize: '16px' }}>.</div>
-          <span className="mb-3"  style={{ color: '#cbd67a' }} >.</span>
+          <span className="mb-3"  style={{ color: '#EBEA1C' }} >.</span>
           <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
             
             <div className="px-8 text-center mb-4"  style={{fontSize: '16px', color: '#777777'  }}>
@@ -167,35 +167,35 @@ export default function OurTeamPage({
           </div> */}
           <div className='flex flex-col w-full md:w-1/3 justify-center items-center rounded-md shadow-md m-2 p-4 bg-white min-h-[200px]'>
           <img
-                          className="block h-60 w-60 mb-2 mt-4"
+                          className="block h-60 w-60 mb-2 mt-4 rounded-lg"
                           src={vara}
-                          alt="Logo"
+                          alt="Varadarajan"
                           onClick={() => { navigate('/'); }}
                           style={{ cursor: 'pointer' }}
                         />
             <div className="mb-1" style={{ fontWeight: '600', fontSize: '16px' }}>Varadarajan Narayanan</div>
-            <span className="mb-3"  style={{ color: '#cbd67a' }} >{'Chief Information Officer (CIO)'.toUpperCase()}</span>
+            <span className="mb-3 px-4 py-2 bg-darkTheme rounded-lg"  style={{ color: '#EBEA1C' }} >{'Chief Information Officer (CIO)'.toUpperCase()}</span>
             <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
 
             <div className="px-8 text-center mb-4"  style={{fontSize: '16px', color: '#777777'  }}>
-            Electrical Engineer with 20+ experience in Industrial Electronics.
+            Electrical Engineer with 20+ experience in Industrial Electronics, instrumentation and control.
             </div>
             
           </div>
           <div className='flex flex-col w-full md:w-1/3 justify-center items-center rounded-md shadow-md m-2 p-4 bg-white min-h-[200px]'>
           <img
-                          className="block h-60 w-60 mb-2 mt-4"
+                          className="block h-60 w-60 mb-2 mt-4 rounded-lg"
                           src={tom}
-                          alt="Logo"
+                          alt="Tom"
                           onClick={() => { navigate('/'); }}
                           style={{ cursor: 'pointer' }}
                         />
             <div className="mb-1" style={{ fontWeight: '600', fontSize: '16px' }}>Tom Manliclic</div>
-            <span className="mb-3"  style={{ color: '#cbd67a' }} >{'Chief Technology Officer (CTO)'.toUpperCase()}</span>
+            <span className="mb-3 px-4 py-2 bg-darkTheme rounded-lg"  style={{ color: '#EBEA1C' }} >{'Chief Technology Officer (CTO)'.toUpperCase()}</span>
             <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
 
             <div className="px-8 text-center mb-4"  style={{fontSize: '16px', color: '#777777'  }}>
-            Tech-savvy professional reflecting strong leadership.
+            Tom is a tech-savvy professional with a pioneering career reflecting strong leadership.
             </div>
             
           </div>

@@ -48,30 +48,30 @@ function OurServices({ }) {
         <div className=' flex flex-col md:flex-row items-center justify-between mt-4 '>
           <div className='flex flex-col w-full md:w-1/3 justify-center items-center rounded-md shadow-md m-2 p-4 bg-white min-h-[200px]'>
           <div className="mb-4" style={{ fontWeight: '600', fontSize: '16px' }}>What We Do</div>
-          <LocationSearchingIcon className="mb-2" style={{ width: '40px', height: '40px', color: '#CBD67A' }}/>
+          <LocationSearchingIcon className="mb-2" style={{ width: '40px', height: '40px', color: '#EBEA1C' }}/>
             
             <div className="px-8 text-center"  style={{fontSize: '16px', color: '#777777'  }}>
             We use technology to improve the normal conventional systems. We can help to make your life much better.
             </div>
-            {/* <div className="mt-4 cursor-pointer" style={{ fontWeight: '600', color: '#CBD67A' }}>Read More</div> */}
+            {/* <div className="mt-4 cursor-pointer" style={{ fontWeight: '600', color: '#EBEA1C' }}>Read More</div> */}
           </div>
           <div className='flex flex-col w-full md:w-1/3 justify-center items-center rounded-md shadow-md m-2 p-4 bg-white min-h-[200px]'>
           
             <div className="mb-4" style={{ fontWeight: '600', fontSize: '16px' }}>Who We Help</div>
-            <CampaignIcon className="mb-2" style={{ width: '40px', height: '40px', color: '#CBD67A' }}/>
+            <CampaignIcon className="mb-2" style={{ width: '40px', height: '40px', color: '#EBEA1C' }}/>
             <div className="px-8 text-center"  style={{fontSize: '16px', color: '#777777'  }}>
             Government agencies, security personel, IT companies, individuals to improve productivity.
             </div>
-            {/* <div className="mt-4 cursor-pointer" style={{ fontWeight: '600', color: '#CBD67A' }}>Read More</div> */}
+            {/* <div className="mt-4 cursor-pointer" style={{ fontWeight: '600', color: '#EBEA1C' }}>Read More</div> */}
           </div>
           <div className='flex flex-col w-full md:w-1/3 justify-center items-center rounded-md shadow-md m-2 p-4 bg-white min-h-[200px]'>
           
             <div className="mb-4" style={{ fontWeight: '600', fontSize: '16px' }}>Why Choose Us</div>
-            <CampaignIcon className="mb-2" style={{ width: '40px', height: '40px', color: '#CBD67A' }}/>
+            <CampaignIcon className="mb-2" style={{ width: '40px', height: '40px', color: '#EBEA1C' }}/>
             <div className="px-8 text-center"  style={{fontSize: '16px', color: '#777777'  }}>
             We have a track record of providing world class services which is why we have stayed relevant since 1995.
             </div>
-            {/* <div className="mt-4 cursor-pointer" style={{ fontWeight: '600', color: '#CBD67A' }}>Read More</div> */}
+            {/* <div className="mt-4 cursor-pointer" style={{ fontWeight: '600', color: '#EBEA1C' }}>Read More</div> */}
           </div>
 
         </div>

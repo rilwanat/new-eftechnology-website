@@ -26,16 +26,16 @@ function WhoWeAre({ }) {
         >          
 
 <div className=' flex flex-col md:flex-row items-center justify-between mt-2 '>
-          <div className='flex flex-col w-full md:w-1/2 justify-start  mx-2 p-4 min-h-[270px]'>
+          <div className='flex flex-col w-full md:w-1/2 justify-start  mx-2 p-4 min-h-[270px] '>
             <div className="mb-4" style={{ fontWeight: '600', fontSize: '16px' }}>WHO WE ARE</div>
             <div className='bg-theme mb-2' style={{ width: '60px', height: '2px' }}></div>
             <div className=" "  style={{fontSize: '16px', color: '#777777'  }} >
             EF Network Ltd is a multinational technology company, founded in 1995 that is a major global player in the green products, wireless/virtual technologies, broadband, cyber-security, tracking systems-personal, home, auto and public safety, communication gadgets, cloud services and e-commerce. EF Technology is also a member of a group which has energy products and minerals.
             </div>
           </div>
-          <div className='flex flex-col w-full md:w-1/2 justify-center  mx-2 p-4'>
+          <div className='flex flex-col w-full md:w-1/2 justify-center  mx-2 p-4 '>
             
-            <img className="w-full h-full object-scale-down rounded-lg" src={conference} alt="" />
+            <img className="w-full h-full object-scale-down rounded-lg border-2" src={conference} alt="" />
           </div>
 
         </div>

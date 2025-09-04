@@ -125,16 +125,16 @@ onMouseLeave={(e) => handleMouseLeave(e)}
                   <div className='ml-0 '>
                   <div 
                   
-                  className="flex w-full items-center z-50" style={{ height: '40px' }}>
+                  className="flex w-full items-center z-50 " style={{ height: '40px' }}>
       {menuItems.map((item, index) => (
         <div
           key={index}
-          className={`cursor-pointer ${index === menuItems.length - 1 ? '' : 'mr-8'} flex relative`}
+          className={`cursor-pointer ${index === menuItems.length - 1 ? '' : 'mr-8'} flex relative `}
           onMouseEnter={() => handleMouseEnter(index)}
           onMouseLeave={() => handleMouseLeave(index)}
         >
           <a
-            className="text-sm text-black cursor-pointer"
+            className="text-sm hover:text-theme text-black cursor-pointer"
             style={{ fontWeight: '600', cursor: 'pointer' }}
             href={item.href}
             target={`${ item.label !== 'EF GOLD' ? '' : '_blank'}`}
@@ -174,7 +174,7 @@ onMouseLeave={(e) => handleMouseLeave(e)}
                   <a
                     key={subIndex}
                     href={subItem.href}
-                    className="block p-2 hover:bg-theme hover:text-white rounded-sm cursor-pointer" 
+                    className="block p-2 hover:bg-theme hover:text-darkTheme hover:font-semibold rounded-sm cursor-pointer" 
                     target={`${ item.label !== 'SUBSIDIARIES' ? '' : '_blank'}`}
                   >
                     {subItem.label}

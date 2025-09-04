@@ -40,25 +40,25 @@ export default function HeaderHead({
       <div className='px-8 md:px-4 lg:px-16 xl:px-24 2xl:px-80  flex flex-col md:flex-row items-center justify-between pt-2'  style={{ backgroundColor: '#1D2024' }}>
         <div className='flex w-1/2'>
           <div className='flex mr-8 items-center'>
-            {/* <div className='mr-2'><PlaceIcon style={{ width: '18px', height: '20px', color: '#CBD67A'  }} /></div> */}
-            <a className='whitespace-nowrap' style={{ fontWeight: '600', cursor: 'pointer', color: '#CBD67A' }} 
+            {/* <div className='mr-2'><PlaceIcon style={{ width: '18px', height: '20px', color: '#EBEA1C'  }} /></div> */}
+            <a className='text-lg whitespace-nowrap' style={{ fontWeight: '500', cursor: 'pointer', color: '#EBEA1C' }} 
             href='/'
             >E.F NETWORK ORGANISATION</a>
           </div>
-          <div className='flex mr-8 cursor-pointer'
-            onClick={() => {}}
+          <div className='flex mr-8 cursor-pointer' style={{ marginTop: '2px' }}
+            onClick={() => {window.location.href = "mailto:info@eftechnology.net";}}
           >
-              <div className='mr-2'><EmailIcon style={{ width: '18px', height: '20px', color: '#CBD67A'  }} /></div>
+              <div className='mr-2'><EmailIcon style={{ width: '18px', height: '20px', color: '#EBEA1C'  }} /></div>
               <div className='flex flex-col' style={{ color: '#eeeeee' }}>
-                <div>info@eftechnology.net</div>
+                <div className="whitespace-nowrap hover:text-theme">info@eftechnology.net</div>
               </div>
             </div>
-            <div className='flex mr-8 cursor-pointer' 
-            onClick={() => {}}
+            <div className='flex mr-8 cursor-pointer'  style={{ marginTop: '2px' }} 
+            onClick={() => {window.location.href = "tel:+2348091113333";}}
           >
-              <div className='mr-2'><CallIcon style={{ width: '18px', height: '20px', color: '#CBD67A'  }} /></div>
+              <div className='mr-2'><CallIcon style={{ width: '18px', height: '20px', color: '#EBEA1C'  }} /></div>
               <div className='flex flex-col' style={{ color: '#eeeeee' }}>
-                <div className="whitespace-nowrap">+234 809 111 3333</div>
+                <div className="whitespace-nowrap hover:text-theme">+234 809 111 3333</div>
               </div>
             </div>
         </div>
@@ -67,51 +67,51 @@ export default function HeaderHead({
         <div className='flex items-center ' style={{ height: '48px' }}>
               
         <div
-            className=" flex items-center justify-center   hover:text-themeColor text-themeColor"
+            className=" flex items-center justify-center "
             // style={{ height: '48px', width: '40px', borderRadius: '4px' }}
             // onClick={() => { logout(); }}
           >
             <a href='https://www.facebook.com/efnetworkltd' target='_blank'>
               <FacebookIcon 
-                className='ml-4 cursor-pointer hover:text-themeColor'
+                className='ml-4 cursor-pointer hover:text-white text-theme'
                 alt="" 
-                style={{ width: '20px', height: '20px', objectFit: 'cover', color: '#CBD67A' }}
+                style={{ width: '20px', height: '20px', objectFit: 'cover'}}
               />
               </a>
           </div>
 
           <div
-            className=" flex items-center justify-center   hover:text-themeColor text-themeColor"
+            className=" flex items-center justify-center"
             // style={{ height: '48px', width: '40px', borderRadius: '4px' }}
             // onClick={() => { logout(); }}
           >
             <a href='https://x.com/efnetworkltd' target='_blank'><XIcon   
-                className='ml-4 cursor-pointer hover:text-themeColor'
+                className='ml-4 cursor-pointer hover:text-white text-theme'
                 alt="" 
-                style={{ width: '20px', height: '20px', objectFit: 'cover', color: '#CBD67A' }}
+                style={{ width: '20px', height: '20px', objectFit: 'cover' }}
               /></a>
           </div>
 
           <div
-            className=" flex items-center justify-center   hover:text-themeColor text-themeColor"
+            className=" flex items-center justify-center"
             // style={{ height: '48px', width: '40px', borderRadius: '4px' }}
             // onClick={() => { logout(); }}
           >
             <a href='https://www.linkedin.com/company/ef-networks-ltd/posts/?feedView=all' target='_blank'><LinkedInIcon 
-                className='ml-4 cursor-pointer hover:text-themeColor'
+                className='ml-4 cursor-pointer hover:text-white text-theme'
                 alt="" 
-                style={{ width: '20px', height: '20px', objectFit: 'cover', color: '#CBD67A' }}
+                style={{ width: '20px', height: '20px', objectFit: 'cover' }}
               /></a>
           </div>
 
           <div
-            className=" flex items-center justify-center   hover:text-themeColor text-themeColor"
+            className=" flex items-center justify-center"
             // style={{ height: '48px', width: '40px', borderRadius: '4px' }}
             // onClick={() => { logout(); }}
           >
             <a href='https://www.instagram.com/efnetworkltd/' target='_blank'><InstagramIcon 
-                className='ml-4 cursor-pointer hover:text-themeColor'                
-                style={{ width: '20px', height: '20px', objectFit: 'cover', color: '#CBD67A' }}
+                className='ml-4 cursor-pointer hover:text-white text-theme'                
+                style={{ width: '20px', height: '20px', objectFit: 'cover' }}
               /></a>
           </div>
               

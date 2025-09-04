@@ -22,6 +22,8 @@ export default function MobileNavbar({
   isMobile, isMenuOpen, toggleMenu, closeMenu
  }) {
 
+  const navigate = useNavigate();
+
   return (
     <div className="w-full fixed top-0 bg-darkTheme  pl-4 text-sm" style={{ zIndex: 10000  }}>
       <div className="flex justify-between py-2">
@@ -29,17 +31,19 @@ export default function MobileNavbar({
       <div className="flex ">
         
 
-        <div className="flex items-center">
+        <div className="flex items-center"
+        onClick={() => {navigate('/');}}
+        >
           <img
             className="block h-12 w-auto max-w-none mr-2"
             src={logo} 
             alt="Logo"
             // onClick={toggleMenu}
-            onClick={() => {navigate('/');}}
+            
             style={{ cursor: 'pointer' }}
           />
 
-<div className='text-theme' style={{ fontWeight: '600', cursor: 'pointer', }}>E.F NETWORK ORGANISATION</div>
+<div className='text-theme text-lg' style={{ fontWeight: '500', cursor: 'pointer', }}>E.F NETWORK ORGANISATION</div>
         </div>
       </div>
 
@@ -51,24 +55,9 @@ export default function MobileNavbar({
             </div>
           </div>
 
-          {/* <div className='mr-4 flex '>
-            <div
-              className=" flex items-center justify-center   hover:text-scGreen  mr-2"
-              style={{ height: '40px', width: '40px', borderRadius: '4px' }}
-              // onClick={() => { logout(); }}
-              >
-              <SearchIcon className=" cursor-pointer " />
-            </div>
-            <div
-              className=" flex items-center justify-center   hover:text-scGreen "
-              style={{ height: '40px', width: '40px', borderRadius: '4px' }}
-              // onClick={() => { logout(); }}
-              >
-              <PersonIcon className=" cursor-pointer " />
-            </div>
-          </div> */}
+          
 
-          {/* <IconButton
+          <IconButton
           edge="start"
           aria-label="menu"
           sx={{ color: 'white', marginRight: 2 }} 
@@ -79,7 +68,7 @@ export default function MobileNavbar({
             <div className='bg-white' style={{ width: '20px', height: '2px', marginBottom: '6px' }}></div>
             <div className='bg-white' style={{ width: '20px', height: '2px', }}></div>
           </div>
-        </IconButton> */}
+        </IconButton>
 
         </div>
 

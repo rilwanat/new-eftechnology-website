@@ -23,11 +23,12 @@ import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined
 import ArrowBackOutlinedIcon from '@mui/icons-material/ArrowBackOutlined';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 
 import PersonIcon from '@mui/icons-material/Person';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import ArrowLeftIcon from '@mui/icons-material/ArrowLeft';
-import CloseIcon from '@mui/icons-material/Close';
+import CloseIcon from '@mui/icons-material/Close';``
 
 const SlideInMenu = styled(motion.div)`
   position: fixed;
@@ -102,7 +103,7 @@ function MobileMenu({
   >
     <MenuContent className=''>
       <div className=''>
-        <div className='flex justify-between items-center pl-4 pr-8  bg-gradient-to-r from-theme to-white shadow-lg'>
+        <div className='flex justify-between items-center pl-4 pr-9  bg-gradient-to-r from-theme to-black shadow-lg'>
 
           <div className='flex items-center'>
           <img
@@ -115,20 +116,20 @@ function MobileMenu({
           }}
             style={{ cursor: 'pointer' }}
           />
-          <div className='' style={{ fontWeight: '600', cursor: 'pointer', }}>E.F NETWORK ORGANISATION</div>
+          <div className='text-lg text-white' style={{ fontWeight: '500', cursor: 'pointer', }}>E.F NETWORK ORGANISATION</div>
 
           </div>
 
-          <CloseIcon className='' onClick={toggleMenu} style={{ cursor: 'pointer', width: '20px', height: '20px' }}/>
+          <CloseIcon className='text-theme ' onClick={toggleMenu} style={{ cursor: 'pointer', width: '20px', height: '20px',  }}/>
         </div>
         {/* <hr /> */}
         {/* Apply variants to each menu item */}
-        <div className='pb-2'>
+        <div className='pb-2 ml-0 pt-4'>
         {/* <motion.span
           variants={menuItemVariants}
           initial="hidden"
           animate={isMenuOpen ? "visible" : "hidden"}
-          className="text-sm  cursor-pointer block my-4 mx-6"
+          className="text-sm  cursor-pointer block my-0 mx-6"
           onClick={() => {
             navigate('/');
             toggleMenu();
@@ -141,7 +142,7 @@ function MobileMenu({
           variants={menuItemVariants}
           initial="hidden"
           animate={isMenuOpen ? "visible" : "hidden"}
-          className="text-sm  cursor-pointer block my-4 mx-6"
+          className="text-lg  cursor-pointer block my-0 mx-6 rounded-lg px-4 py-2 hover:bg-darkTheme hover:text-theme"
           onClick={() => {
             navigate('/about-us');
             toggleMenu();
@@ -154,7 +155,7 @@ function MobileMenu({
           variants={menuItemVariants}
           initial="hidden"
           animate={isMenuOpen ? "visible" : "hidden"}
-          className="text-sm  cursor-pointer block my-4 mx-6"
+          className="text-lg  cursor-pointer block my-0 mx-6 rounded-lg px-4 py-2 hover:bg-darkTheme hover:text-theme"
           onClick={() => {
             navigate('/our-team');
             toggleMenu();
@@ -167,7 +168,7 @@ function MobileMenu({
           variants={menuItemVariants}
           initial="hidden"
           animate={isMenuOpen ? "visible" : "hidden"}
-          className="text-sm  cursor-pointer block my-4 mx-6"
+          className="text-lg  cursor-pointer block my-0 mx-6 rounded-lg px-4 py-2 hover:bg-darkTheme hover:text-theme"
           onClick={() => {
             navigate('/why-choose-us');
             toggleMenu();
@@ -176,50 +177,11 @@ function MobileMenu({
           Why Choose Us
         </motion.span>
 
-        {/* <motion.span
-          variants={menuItemVariants}
-          initial="hidden"
-          animate={isMenuOpen ? "visible" : "hidden"}
-          className="text-sm  cursor-pointer block my-4 mx-6"
-          onClick={() => {
-            navigate('/why-choose-us');
-            toggleMenu();
-          }}
-        >
-          Careers
-        </motion.span> */}
-
-        {/* <motion.span
-          variants={menuItemVariants}
-          initial="hidden"
-          animate={isMenuOpen ? "visible" : "hidden"}
-          className="text-sm  cursor-pointer block my-4 mx-6"
-          onClick={() => {
-            // navigate('/about-us');
-            toggleMenu();
-          }}
-        >
-          FAQ
-        </motion.span> */}
-
-        {/* <motion.span
-          variants={menuItemVariants}
-          initial="hidden"
-          animate={isMenuOpen ? "visible" : "hidden"}
-          className="text-sm  cursor-pointer block my-4 mx-6"
-          onClick={() => {
-            // navigate('/about-us');
-            toggleMenu();
-          }}
-        >
-          Products
-        </motion.span> */}
-
         <motion.span
           variants={menuItemVariants}
           initial="hidden"
           animate={isMenuOpen ? "visible" : "hidden"}
-          className="text-sm  cursor-pointer block my-4 mx-6 "
+          className="text-lg  cursor-pointer block my-0 mx-6 rounded-lg px-4 py-2 hover:bg-darkTheme hover:text-theme"
           onClick={() => {
             navigate('/ef-gold');
             toggleMenu();
@@ -232,7 +194,7 @@ function MobileMenu({
           variants={menuItemVariants}
           initial="hidden"
           animate={isMenuOpen ? "visible" : "hidden"}
-          className="text-sm  cursor-pointer block my-4 mx-6"
+          className="text-lg  cursor-pointer block my-0 mx-6 rounded-lg px-4 py-2 hover:bg-darkTheme hover:text-theme"
           onClick={() => {
             navigate('/ef-energy');
             toggleMenu();
@@ -241,24 +203,11 @@ function MobileMenu({
           EF Energy
         </motion.span>
 
-        {/* <motion.span
-          variants={menuItemVariants}
-          initial="hidden"
-          animate={isMenuOpen ? "visible" : "hidden"}
-          className="text-sm  cursor-pointer block my-4 mx-6"
-          onClick={() => {
-            // navigate('/about-us');
-            toggleMenu();
-          }}
-        >
-          Businesses
-        </motion.span> */}
-
         <motion.span
           variants={menuItemVariants}
           initial="hidden"
           animate={isMenuOpen ? "visible" : "hidden"}
-          className="text-sm  cursor-pointer block my-4 mx-6"
+          className="text-lg  cursor-pointer block my-0 mx-6 rounded-lg px-4 py-2 hover:bg-darkTheme hover:text-theme"
           onClick={() => {
             // navigate('/about-us');
             toggleMenu();
@@ -271,7 +220,7 @@ function MobileMenu({
           variants={menuItemVariants}
           initial="hidden"
           animate={isMenuOpen ? "visible" : "hidden"}
-          className="text-sm  cursor-pointer block my-4 mx-6"
+          className="text-lg  cursor-pointer block my-0 mx-6 rounded-lg px-4 py-2 hover:bg-darkTheme hover:text-theme"
           onClick={() => {
             navigate('/contact');
             toggleMenu();
@@ -281,6 +230,27 @@ function MobileMenu({
         </motion.span>
         </div>
         
+        
+
+        <div
+                            className="background-icon"
+                            style={{
+                              position: 'absolute',
+                              bottom: '30px', right: '30px',
+                              transition: 'transform 1.5s ease',
+                            }}
+                          >
+                            <img
+            className="block h-32 opacity-25 my-2 mr-2"
+            src={logo}
+            alt="Logo"
+          />
+
+                          </div>
+
+
+
+
 
       </div>
     {/* Fixed div at the bottom */}

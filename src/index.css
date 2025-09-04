@@ -1,6 +1,19 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
 
-@theme{
-    --color-theme: #CBD67A;
+@theme {
+    --color-theme: #EBEA1C;
     --color-darkTheme: #1D2024;
+    --font-sans: 'Rajdhani', sans-serif;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --color-theme: #EBEA1C;
+    --color-darkTheme: #1D2024;
+    --color-lightGray: #777777;
+    --color-darkGray: #cccccc;
+    --font-sans: 'Exo 2', sans-serif;
 }
