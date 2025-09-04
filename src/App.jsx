@@ -13,6 +13,9 @@ import WhyChooseUsPage from './components/WhyChooseUsPage.jsx';
 import CareersPage from './components/CareersPage.jsx';
 import FaqPage from './components/FaqPage.jsx';
 
+import TeamMemberPage from './components/TeamMemberPage.jsx';
+
+
 import EFGoldPage from './components/EFGoldPage.jsx';
 import EFEnergyPage from './components/EFEnergyPage.jsx';
 
@@ -73,6 +76,8 @@ function App() {
             <Route path='/why-choose-us' element={<WhyChooseUsPage isMobile={isMobile} isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} closeMenu={closeMenu} />}/>
             <Route path='/careers' element={<CareersPage isMobile={isMobile} isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} closeMenu={closeMenu} />}/>
             <Route path='/faq' element={<FaqPage isMobile={isMobile} isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} closeMenu={closeMenu} />}/>
+
+            <Route path='/team-member/:name' element={<TeamMemberPage isMobile={isMobile} isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} closeMenu={closeMenu} />}/>
 
             <Route path='/ef-gold' element={<EFGoldPage isMobile={isMobile} isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} closeMenu={closeMenu} />}/>
             <Route path='/ef-energy' element={<EFEnergyPage isMobile={isMobile} isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} closeMenu={closeMenu} />}/>
