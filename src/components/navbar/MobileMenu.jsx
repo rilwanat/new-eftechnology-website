@@ -239,6 +239,21 @@ function MobileMenu({
           animate={isMenuOpen ? "visible" : "hidden"}
           className="text-lg  cursor-pointer block my-0 mx-6 rounded-lg px-4 py-2 hover:bg-darkTheme hover:text-theme"
           onClick={() => {
+            // navigate('/efskyview');
+            //https://efskyview.com/
+            window.open('https://pricecheck24.com/', '_blank');
+            toggleMenu();
+          }}
+        >
+          PriceCheck24
+        </motion.span>
+
+        <motion.span
+          variants={menuItemVariants}
+          initial="hidden"
+          animate={isMenuOpen ? "visible" : "hidden"}
+          className="text-lg  cursor-pointer block my-0 mx-6 rounded-lg px-4 py-2 hover:bg-darkTheme hover:text-theme"
+          onClick={() => {
             // navigate('/about-us');
             toggleMenu();
           }}
