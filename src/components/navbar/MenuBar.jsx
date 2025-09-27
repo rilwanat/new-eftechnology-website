@@ -61,6 +61,7 @@ export default function MenuBar({
       { label: 'EFWaste Management', href: 'https://efwaste.com/' },
       { label: 'EFSkyview', href: 'https://efskyview.com/' },
       // { label: 'EFWireless', href: '/ef-wireless' },
+      { label: 'PriceCheck24', href: 'https://pricecheck24.com/' },
     ] },
     { label: 'CONTACT', href: '/contact' },
   ];
